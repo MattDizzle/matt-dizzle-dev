@@ -48,16 +48,11 @@ export default (props) => {
             </p>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-            <li><a class="linkedin" href="#" className='icon fab fa-linkedin-in' /></li>  
-              <li><a class="github" href="#" className='icon'><i class="fa fa-github"></i></a></li>
-              <li><a class="codewars" href="#" className='icon'><i class="fa fa-codewars"></i></a></li>
-              <li><a class="hackerrank" href="#" className='icon'><i class="fa fa-hackerrank"></i></a></li> 
-              <FontAwesomeIcon className='fab fa-github icon'  icon="fab fa-github" />
+          <div>
+            <a class="linkedin" href="#" className='icon fab fa-linkedin-in' />
+              <FontAwesomeIcon className='fab fa-github'  icon="fab fa-linkedin-in" />
+              <FontAwesomeIcon className='fab fa-github'  icon={["fab", "fa-github"]} />
               <FontAwesomeIcon className='icon'  icon={faArrowUp} />
-              <FontAwesomeIcon className='icon' icon="fa-solid fa-file-code" />
-            </ul>
           </div>
         </div>
       </div>

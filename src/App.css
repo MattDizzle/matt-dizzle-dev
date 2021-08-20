@@ -27,6 +27,12 @@ font-family: 'Staatliches', cursive; */
   padding-bottom: 0;
   padding-left: 0;
   width: 100%;
+  background-color: #E7ECEF;
+}
+
+main {
+  background-color: #E7ECEF;
+  color: #E7ECEF;
 }
 
 header {
@@ -36,17 +42,18 @@ header {
   justify-content: space-between;
   height: 10vh;
   align-items: center;
-  padding: 0;
+  padding: 10px;
   margin-bottom: 10px;
 }
 
 header>img {
-  width: 15vw;
+  width: 10vw;
 }
 
 header>h1 {
   font-size: 1.5em;
   font-family: 'Russo One', 'Libre Barcode 128 Text', cursive;
+  color: #3333FF;
 }
 
 header>.menu>.bar {
@@ -58,7 +65,7 @@ header>.menu>.bar {
 }
 
 .card {
-  background-color: #fd49f4;
+  background-color: #8802af;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -73,7 +80,7 @@ header>.menu>.bar {
   bottom: 0;
   left: 0;
   width: 100vw;
-  background-color: #494cf3;
+  background-color: #dddbdd;
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -86,11 +93,12 @@ header>.menu>.bar {
   font-size: 2.2em;
   padding: 0;
   margin: 10px;
+  color: #3333FF;
 }
 
 .site-footer {
-  background-color: #0b153d;
-  padding: 45px 0 20px;
+  background-color: #0B8199;
+  padding: 45px 10px 20px;
   font-size: 15px;
   color: #dddbdd;
   left: 0;
@@ -98,6 +106,7 @@ header>.menu>.bar {
   flex-direction: column;
   visibility: visible;
   padding-bottom: 80px;
+  margin-top: 20px;
 }
 
 .site-footer hr {
@@ -126,30 +135,13 @@ header>.menu>.bar {
   text-decoration: none;
 }
 
-.footer-links {
-  padding-left: 0;
-  list-style: none
-}
-
-.footer-links li {
-  /* display: block */
-}
-
-.footer-links a {
-  color: #737373
-}
-
-.footer-links a:active,
-.footer-links a:focus,
-.footer-links a:hover {
+.footer-links:active,
+.footer-links:focus,
+.footer-links:hover {
   color: #3366cc;
   text-decoration: none;
 }
 
-.footer-links.inline li {
-  /* display: inline-block */
-  
-}
 
 .site-footer .social-icons {
   font-size: 2em;
@@ -181,7 +173,9 @@ header>.menu>.bar {
 
 }
 
-@media (min-width:700px) {}
+@media (min-width:700px) {
+
+}
 
 @media (min-width:1400px) {
   header {
@@ -218,16 +212,13 @@ header>.menu>.bar {
     display: flex;
     flex-direction: row;
     padding-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     list-style: none
   }
 
-  .social-icons li {
-    /* display: inline-block; */
-    margin-bottom: 4px
-  }
+  
 
-  .social-icons li.title {
+  .social-icons title {
     margin-right: 15px;
     text-transform: uppercase;
     color: #96a2b2;
@@ -235,25 +226,10 @@ header>.menu>.bar {
     font-size: 13px
   }
 
-  .social-icons a {
-    background-color: #eceeef;
-    color: #818a91;
-    font-size: 16px;
-    display: inline-block;
-    line-height: 44px;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    margin-right: 8px;
-    border-radius: 100%;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear
-  }
 
-  .social-icons a:active,
-  .social-icons a:focus,
-  .social-icons a:hover {
+  .social-icons::after,
+  .social-icons:focus,
+  .social-icons:hover {
     color: #fff;
     background-color: #29aafe
   }
@@ -265,19 +241,19 @@ header>.menu>.bar {
     font-size: 14px
   }
 
-  .social-icons a.facebook:hover {
-    background-color: #3b5998
+  .social-icons:hover {
+    background-color: #ffffff
   }
 
-  .social-icons a.twitter:hover {
+  .social-icons:hover {
     background-color: #00aced
   }
 
-  .social-icons a.linkedin:hover {
+  .social-icons:hover {
     background-color: #007bb6
   }
 
-  .social-icons a.dribbble:hover {
+  .social-icons:hover {
     background-color: #ea4c89
   }
 }
