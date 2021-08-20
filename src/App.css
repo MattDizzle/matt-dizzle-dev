@@ -27,11 +27,11 @@ font-family: 'Staatliches', cursive; */
   padding-bottom: 0;
   padding-left: 0;
   width: 100%;
-  background-color: #E7ECEF;
+  background-color: #180018;
 }
 
 main {
-  background-color: #E7ECEF;
+  background-color: #180018;
   color: #E7ECEF;
 }
 
@@ -43,21 +43,21 @@ header {
   height: 10vh;
   align-items: center;
   padding: 10px;
-  margin-bottom: 10px;
 }
 
 header>img {
   width: 10vw;
+  outline-color: #dddbdd;
 }
 
 header>h1 {
   font-size: 1.5em;
   font-family: 'Russo One', 'Libre Barcode 128 Text', cursive;
-  color: #3333FF;
+  color: #dddbdd;
 }
 
 header>.menu>.bar {
-  background-color: black;
+  background-color: #dddbdd;
   border-radius: 20%;
   height: 5px;
   width: 30px;
@@ -74,13 +74,22 @@ header>.menu>.bar {
   margin-bottom: 5px;
   margin-left: 0;
   margin-right: 0;
+  border: .25em solid #180018;
+  /* border-bottom: 4em solid #fff; */
+  box-shadow: .11rem .11rem .11rem .15em #dddbdd;
+  margin: 1em auto;
+  opacity: 0;
+  transform: translateY(4em) rotateZ(-5deg);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  will-change: transform, opacity;
 }
 
 .nav {
   bottom: 0;
   left: 0;
   width: 100vw;
-  background-color: #dddbdd;
+  background-color: #180018;
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -90,14 +99,14 @@ header>.menu>.bar {
 }
 
 .nav>.icon {
-  font-size: 2.2em;
+  font-size: 1.3em;
   padding: 0;
   margin: 10px;
-  color: #3333FF;
+  color: #dddbdd;
 }
 
 .site-footer {
-  background-color: #0B8199;
+  background-color: #180018;
   padding: 45px 10px 20px;
   font-size: 15px;
   color: #dddbdd;
