@@ -6,12 +6,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink, faScroll, faArrowUp  } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+// import ScrollButton from './components/ScrollToTopButton'
+
 library.add(fab)
 
 
 
 
 export default (props) => {
+  const scrollToTop = () =>{
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+    });
+  };
+
     return (
         <footer className="site-footer">
              <div className="container">
@@ -57,7 +66,7 @@ export default (props) => {
           <div className="social-icons">
               <i className ="fab fa-linkedin-in icon"/>
               <i className="fab fa-github icon" />
-              <FontAwesomeIcon className='icon'  icon={faArrowUp} />
+              <FontAwesomeIcon onClick={scrollToTop} className='icon'  icon={faArrowUp} />
           </div>
         </div>
       </div>
