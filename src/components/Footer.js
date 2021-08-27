@@ -1,17 +1,9 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import logo from '../images/matt-dizzle-dev-logo.png'
-import hamburger from '../images/menu-button.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink, faScroll, faArrowUp  } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-// import ScrollButton from './components/ScrollToTopButton'
-
 library.add(fab)
-
-
-
 
 export default (props) => {
   const scrollToTop = () =>{
@@ -20,7 +12,6 @@ export default (props) => {
       behavior: 'smooth'
     });
   };
-
     return (
         <footer className="site-footer">
              <div className="container">

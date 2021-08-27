@@ -3,10 +3,11 @@ import Card from './Card'
 
 export default function Contact(props) {
     return (
-        <main className='contact-form'>
+        <section className='contact-form'>
+            <img src= 'https://source.unsplash.com/random' className='card-pic' />
             <h2> Contact Me</h2>
             <form>
-                <label>Name</label>
+                <label >Name</label>
                 <input></input>
                 <label>Email</label>
                 <input></input>
@@ -17,6 +18,6 @@ export default function Contact(props) {
                 <label>Message</label>
                 <textarea></textarea>
             </form>
-        </main>
+        </section>
     )
 }
