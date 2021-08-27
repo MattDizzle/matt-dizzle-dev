@@ -6,12 +6,11 @@ import Home from './components/Home';
 import Menu from './components/Menu';
 import Navigator from './components/Navigator'
 import LoadingScreen from './LoadingScreen/LoadingScreen'
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Code from './components/Code'
 import Graphics from './components/Graphics'
 import Film from './components/Film'
 import Contact from './components/Contact'
-import ScrollButton from './components/ScrollToTopButton'
 
 function App() {
   const [loading, setLoading] = useState(true);

@@ -1,10 +1,9 @@
-import React, { PureComponent } from 'react'
-import Card from './Card'
+import React from 'react'
 
-export default function Contact(props) {
+export default function Contact() {
     return (
         <section className='contact-form'>
-            <img src= 'https://source.unsplash.com/random' className='card-pic' />
+            <img src= 'https://source.unsplash.com/random' className='card-pic' alt='some text' />
             <h2> Contact Me</h2>
             <form>
                 <label >Name</label>

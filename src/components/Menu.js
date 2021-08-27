@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default () => {
+const Menu = () => {
     return (
         <section className='menu-box animate__animated animate__fadeInRight'>
             <h3>Home</h3>
@@ -9,6 +9,7 @@ export default () => {
             <h3>Graphics</h3>
             <h3>Contact Me</h3>
         </section>
-        
     )
 }
+
+export default Menu

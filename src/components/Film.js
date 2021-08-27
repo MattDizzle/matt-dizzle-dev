@@ -1,7 +1,7 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 import Card from './Card'
 
-export default function Film(props) {
+export default function Film() {
     return (
         <div>
             <Card title='Reactiv Solutions' paragraph='Created using Node.js, React, Express and Postgres'/>

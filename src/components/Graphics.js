@@ -1,7 +1,7 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 import Card from './Card'
 
-export default function Graphics(props) {
+const Graphics = function Graphics(props) {
     return (
         <div>
             <Card title='Saneful' paragraph='Created using Node.js, React, Express and Postgres'/>
@@ -11,3 +11,5 @@ export default function Graphics(props) {
         </div>
     )
 }
+
+export default Graphics

@@ -1,7 +1,7 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 import Card from './Card'
 
-export default function Code(props) {
+export default function Code() {
     return (
         <div>
             <Card title='Saneful' paragraph='Created using Node.js, React, Express and Postgres'/>

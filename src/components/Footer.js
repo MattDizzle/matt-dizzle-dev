@@ -1,11 +1,11 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLink, faScroll, faArrowUp  } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUp  } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fab)
 
-export default (props) => {
+const Footer = () => {
   const scrollToTop = () =>{
     window.scrollTo({
       top: 0, 
@@ -24,23 +24,23 @@ export default (props) => {
           <div className="col-xs-6 col-md-3">
             <h6>Categories</h6>
             <ul className="footer-links">
-              <li><a href="http://scanfcode.com/category/c-language/">JavaScript</a></li>
-              <li><a href="http://scanfcode.com/category/front-end-development/">React</a></li>
-              <li><a href="http://scanfcode.com/category/back-end-development/">Express</a></li>
-              <li><a href="http://scanfcode.com/category/java-programming-language/">Postgres</a></li>
-              <li><a href="http://scanfcode.com/category/android/">MongoDB</a></li>
-              <li><a href="http://scanfcode.com/category/templates/">Design</a></li>
+              <li><a href="coding">JavaScript</a></li>
+              <li><a href="coding">React</a></li>
+              <li><a href="coding">Express</a></li>
+              <li><a href="coding">Postgres</a></li>
+              <li><a href="coding">MongoDB</a></li>
+              <li><a href="graphics">Design</a></li>
             </ul>
           </div>
 
           <div className="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul className="footer-links">
-              <li><a href="http://scanfcode.com/about/">About Me</a></li>
-              <li><a href="http://scanfcode.com/contact/">Contact Me</a></li>
-              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Book an Appointment</a></li>
-              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+              <li><a href="/">About Me</a></li>
+              <li><a href="contact">Contact Me</a></li>
+              <li><a href="contact">Book an Appointment</a></li>
+              <li><a href="/">Privacy Policy</a></li>
+              <li><a href="/">Sitemap</a></li>
             </ul>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default (props) => {
         <div className="row">
           <div className="">
             <p className="copyright-text">Copyright &copy; 2021 All Rights Reserved by  
-         <a href="#"> Matt Dizzle Dev</a>.
+         <a href="/"> Matt Dizzle Dev</a>.
             </p>
           </div>
 
@@ -66,3 +66,4 @@ export default (props) => {
     
 }
 
+export default Footer

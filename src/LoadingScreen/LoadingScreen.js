@@ -1,5 +1,4 @@
 import LoadingRing from "./Ring.png";
-import Logo from "../images/matt-dizzle-dev-logo.png";
 import "./LoadingScreen.css";
 
 

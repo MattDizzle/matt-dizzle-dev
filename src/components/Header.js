@@ -1,12 +1,8 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import logo from '../images/matt-dizzle-dev-logo.png'
-import hamburger from '../images/menu-button.png'
-import { Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-
-
-export default (props) => {
+const Header = () => {
     const openMenu = () => console.log(`I should be a menu`)
     return (
         <header>
@@ -29,3 +25,5 @@ export default (props) => {
         </header>
     )
 }
+
+export default Header
