@@ -18,17 +18,17 @@ const Footer = () => {
         <div className="row">
           <div className="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p className="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            <p className="text-justify">Sunt eu non et ut est. Nisi quis ea velit dolor aliqua pariatur sit esse magna cillum occaecat. Cupidatat id proident aliqua non. Duis non exercitation veniam minim amet cillum excepteur ipsum nisi do adipisicing. Cupidatat id sint excepteur sunt laboris. Irure exercitation anim Lorem sunt quis tempor consectetur mollit. Enim cillum cillum occaecat culpa excepteur qui. </p>
           </div>
 
           <div className="col-xs-6 col-md-3">
             <h6>Categories</h6>
             <ul className="footer-links">
-              <li><a href="coding">JavaScript</a></li>
-              <li><a href="coding">React</a></li>
-              <li><a href="coding">Express</a></li>
-              <li><a href="coding">Postgres</a></li>
-              <li><a href="coding">MongoDB</a></li>
+              <li><a href="code">JavaScript</a></li>
+              <li><a href="code">React</a></li>
+              <li><a href="code">Express</a></li>
+              <li><a href="code">Postgres</a></li>
+              <li><a href="code">MongoDB</a></li>
               <li><a href="graphics">Design</a></li>
             </ul>
           </div>
@@ -50,7 +50,7 @@ const Footer = () => {
         <div className="row">
           <div className="">
             <p className="copyright-text">Copyright &copy; 2021 All Rights Reserved by  
-         <a href="/"> Matt Dizzle Dev</a>.
+          Matt Dizzle Dev.
             </p>
           </div>
 
