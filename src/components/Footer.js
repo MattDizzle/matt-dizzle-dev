@@ -55,8 +55,8 @@ const Footer = () => {
           </div>
 
           <div className="social-icons">
-              <i className ="fab fa-linkedin-in icon"/>
-              <i className="fab fa-github icon" />
+              <a href='https://linkedin.com/in/matthew-rougely' target='blank' ><i className ="fab fa-linkedin-in icon"/></a>
+              <a href='https://github.com/MattDizzle' target='blank' ><i className="fab fa-github icon" /></a>
               <FontAwesomeIcon onClick={scrollToTop} className='icon'  icon={faArrowUp} />
           </div>
         </div>

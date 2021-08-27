@@ -9,9 +9,9 @@ const Header = () => {
             <h1>Matt Dizzle Dev</h1>
             <section className='menu'>
                 <div className='links'>
-                    <h3 className='link'>Coding</h3>
-                    <h3 className='link'>Videos</h3>
-                    <h3 className='link'>Graphics</h3>
+                    <Link to='film' className='link'>Videos</Link>
+                    <Link to='code' className='link'>Coding</Link>
+                    <Link to='graphics' className='link'>Graphics</Link>
                 </div>
             </section>
         </header>

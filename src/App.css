@@ -58,13 +58,11 @@ header>h1 {
   visibility: hidden;
 }
 
-header>.menu>#header-ham>.ham>.bar {
-  background-color: #dddbdd;
-  border-radius: 20%;
-  height: 5px;
-  width: 30px;
-  margin: 5px;
-  visibility: visible;
+header>.menu>.links>a.link {
+  text-decoration: none;
+  margin: 10px;
+  color: white;
+  font-size: 1.5em;
 }
 
 .menu-box {
@@ -155,10 +153,19 @@ form>textarea {
   color: #fffec8;
 }
 
-a {
+.nav>a {
   color: white;
   font-size: 1.4em;
 }
+.social-icons>a {
+  /* color: white; */
+  font-size: 1.0em;
+}
+.social-icons>a:hover {
+  color: rgb(255, 255, 255);
+  font-size: 1.0em;
+}
+
 a:active a:visited {
   color: yellow; 
 }
