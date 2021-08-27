@@ -3,7 +3,6 @@ import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './components/Home';
-import Menu from './components/Menu';
 import Navigator from './components/Navigator'
 import LoadingScreen from './LoadingScreen/LoadingScreen'
 import { Switch, Route } from "react-router-dom";
@@ -34,7 +33,6 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/code" component={Code} />
-            <Route exact path="/menu" component={Menu} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/film" component={Film} />
             <Route exact path="/graphics" component={Graphics} />
