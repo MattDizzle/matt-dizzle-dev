@@ -221,6 +221,7 @@ a:active a:visited {
 .site-footer a:hover {
   color: #3366cc;
   text-decoration: none;
+  text-shadow: -8px -2px 13px #93dffa;
 }
 
 .footer-links:active,
@@ -277,6 +278,32 @@ a:active a:visited {
 }
 
 @media (min-width:1400px) {
+
+  .card {
+    flex-direction: row;
+  }
+
+  .card>img {
+    width: 45%;
+  }
+
+  .contact-form{
+    flex-direction: row;
+  }
+  .contact-text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .contact-form > img {
+    width: 25%;
+    align-self: center;
+  }
+
    header>.menu>.links {
     visibility: visible;
     display: flex;
@@ -290,6 +317,11 @@ a:active a:visited {
     margin-left: 10px;
     margin-right: 10px;
     align-self: baseline;
+  }
+
+  header>.menu>.links>a:hover {
+    color:#93dffa;
+    text-shadow: -8px -2px 13px #93dffa;
   }
 
   header {
@@ -309,13 +341,7 @@ a:active a:visited {
     visibility: hidden;
   }
 
-  .card {
-    flex-direction: row;
-  }
-
-  .card>img {
-    width: 45%;
-  }
+ 
 
   .reverse {
     flex-direction: row-reverse;
@@ -327,8 +353,9 @@ a:active a:visited {
 
   .card-text-box > p {
     margin-top: 10px;
-    font-size: 2rem ;
+    font-size: 1rem ;
   }
+
   .card-text-box > h1p {
     margin-top: 10px;
     font-size: 3rem ;
@@ -371,8 +398,8 @@ a:active a:visited {
   .icon::after,
   .icon:focus,
   .icon:hover {
-    color: #fff;
-    color: #29aafe
+    color:#00b7fa;
+    text-shadow: -8px -2px 13px #93dffa;
   }
 
   .social-icons.size-sm a {
@@ -383,15 +410,8 @@ a:active a:visited {
   }
 
   .icon:hover {
-    color: #ffffff
-  }
-
-  .icon:hover {
-    color: #00aced
-  }
-
-  .icon:hover {
-    color: #007bb6
+    color:#00b7fa;
+    text-shadow: -8px -2px 13px #93dffa;
   }
 
   .video-card {

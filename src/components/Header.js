@@ -9,9 +9,11 @@ const Header = () => {
             <h1>Matt Dizzle Dev</h1>
             <section className='menu'>
                 <div className='links'>
+                    <Link to='/' className='link'>Home</Link>
                     <Link to='code' className='link'>Code</Link>
                     <Link to='film' className='link'>Film</Link>
                     <Link to='graphics' className='link'>Graphic Design</Link>
+                    <Link to='contact' className='link'>Contact Me</Link>
                 </div>
             </section>
         </header>

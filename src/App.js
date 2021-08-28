@@ -10,6 +10,7 @@ import Code from './components/Code'
 import Graphics from './components/Graphics'
 import Film from './components/Film'
 import Contact from './components/Contact'
+import ContactForm from './components/ContactForm'
 import ScrollToTop from './helpers/ScrollToTop'
 
 function App() {
@@ -32,13 +33,13 @@ function App() {
           <Header />
           <main>
             <ScrollToTop />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/code" component={Code} />
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path="/film" component={Film} />
-            <Route exact path="/graphics" component={Graphics} />
-          </Switch>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/code" component={Code} />
+              <Route exact path="/contact" component={ContactForm} />
+              <Route exact path="/film" component={Film} />
+              <Route exact path="/graphics" component={Graphics} />
+            </Switch>
           </main>
           <Footer />
           <Navigator />
