@@ -101,7 +101,7 @@ header>.menu>.links {
 }
 
 .card > img {
-  width: 80%;
+  width: 100%;
   align-self: center;
 }
 
@@ -311,6 +311,10 @@ a:active a:visited {
 
   .card {
     flex-direction: row;
+  }
+
+  .card>img {
+    width: 45%;
   }
 
   .reverse {
