@@ -65,6 +65,7 @@ header>.menu>.links>a.link {
   font-size: 1.5em;
 }
 
+
 .menu-box {
   width: 100%;
   height: 90vh;
@@ -107,6 +108,18 @@ header>.menu>.links {
 
 .card-text-box {
   margin-top: 20px;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon-box > img {
+  width: 20%;
 }
 
 .contact-form {
