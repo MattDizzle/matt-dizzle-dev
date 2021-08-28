@@ -27,11 +27,11 @@ font-family: 'Staatliches', cursive; */
   padding-bottom: 0;
   padding-left: 0;
   width: 100%;
-  background-color: #180018;
+  background-color: white;
 }
 
 main {
-  background-color: #180018;
+  /* background-color: #180018; */
   color: #E7ECEF;
 }
 
@@ -61,7 +61,7 @@ header>h1 {
 header>.menu>.links>a.link {
   text-decoration: none;
   margin: 10px;
-  color: white;
+  color: #185a9d;
   font-size: 1.5em;
 }
 
@@ -81,7 +81,7 @@ header>.menu>.links {
 }
 
 .card {
-  background-color: #003c80;
+  background: linear-gradient( 135deg, #185a9d, #43cea2);
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -148,7 +148,7 @@ form>textarea {
   bottom: 0;
   left: 0;
   width: 100vw;
-  background-color: #180018;
+  background-color: #185a9d;
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -194,7 +194,7 @@ a:active a:visited {
 }
 
 .site-footer {
-  background-color: #dddbdd;
+  background: linear-gradient( 0deg, #185a9d, #43cea2, #43cea2);
   padding: 45px 10px 20px;
   font-size: 15px;
   color: #003c80;
@@ -291,6 +291,11 @@ a:active a:visited {
 }
 
 @media (min-width:1400px) {
+
+  main {
+    padding-left:20px;
+    padding-right:20px;
+  }
 
   .card {
     flex-direction: row;
