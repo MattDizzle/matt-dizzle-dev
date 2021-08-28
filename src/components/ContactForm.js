@@ -25,15 +25,15 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit} className='contact-form'>
         <div className='contact-text-box'>
-      <div>
+      <div className='label-input'>
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" required />
       </div>
-      <div>
+      <div className='label-input'>
         <label htmlFor="email">Email:</label>
         <input type="email" id="email" required />
       </div>
-      <div>
+      <div className='label-input'>
         <label htmlFor="message">Message:</label>
         <textarea id="message" required />
       </div>
