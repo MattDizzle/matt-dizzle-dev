@@ -18,7 +18,11 @@ const Footer = () => {
         <div className="row">
           <div className="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p className="text-justify">Sunt eu non et ut est. Nisi quis ea velit dolor aliqua pariatur sit esse magna cillum occaecat. Cupidatat id proident aliqua non. Duis non exercitation veniam minim amet cillum excepteur ipsum nisi do adipisicing. Cupidatat id sint excepteur sunt laboris. Irure exercitation anim Lorem sunt quis tempor consectetur mollit. Enim cillum cillum occaecat culpa excepteur qui. </p>
+            <p className="text-justify">My name is Matthew and I live in Rialto, California. I'm an aspiring full stack web developer.
+             I love music, basketball, learning and computers. I recently did an Internship at Eide Bailly were I learned
+              a ton of stuff about Integrating Multiple systems using a combination of Boomi and SuiteScript 2.0.
+               Prior to this Internship I graduated from the Engineering Immersion Program were I learned Full-Stack Web
+                Development using PostgreSQL, Express, React and Node.js through hands on learning, building multiple apps. </p>
           </div>
 
           <div className="col-xs-6 col-md-3">

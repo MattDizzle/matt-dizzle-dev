@@ -97,6 +97,7 @@ font-family: 'Staatliches', cursive; */
   will-change: transform, opacity;
   border-radius: 10px;
   color: white;
+  z-index: 5;
 }
 
 .card > img {
@@ -135,7 +136,7 @@ form>textarea {
 }
 #girl {
   position: absolute;
-  bottom: 5vh;
+  bottom: 10vh;
   right: 1vw;
   z-index: 1;
 }
@@ -203,7 +204,7 @@ header>.menu>.links {
 .landing {
   background: linear-gradient( 135deg, #185a9d, #43cea2); ;
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
 }
@@ -429,6 +430,7 @@ main {
 
   .card {
     flex-direction: row;
+    
   }
 
   .card>img {
@@ -491,6 +493,10 @@ main {
 
   header > h1 {
     visibility: hidden;
+  }
+
+  .landing {
+    min-height: 100vh;
   }
 
   .landing-h1 {
