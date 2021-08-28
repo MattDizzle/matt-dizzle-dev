@@ -100,14 +100,16 @@ header>.menu>.links {
   color: white;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
+
 
 .card > img {
   width: 50%;
   align-self: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
 }
 .contact-form > img {
   width: 50%;
@@ -240,6 +242,19 @@ a:active a:visited {
   margin: 0
 }
 
+.video-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-card > iframe {
+  width: 100%;
+  align-self: center;
+}
+
 @media (min-width:400px) {
   /* .site-footer [class^=col-] {
     margin-bottom: 40px
@@ -299,6 +314,7 @@ a:active a:visited {
   .card {
     flex-direction: row;
   }
+
 
   .reverse {
     flex-direction: row-reverse;
