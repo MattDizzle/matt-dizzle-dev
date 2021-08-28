@@ -10,6 +10,7 @@ import Code from './components/Code'
 import Graphics from './components/Graphics'
 import Film from './components/Film'
 import Contact from './components/Contact'
+import ScrollToTop from './helpers/ScrollToTop'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -30,6 +31,7 @@ function App() {
         <div className="App">
           <Header />
           <main>
+            <ScrollToTop />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/code" component={Code} />
