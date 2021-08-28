@@ -274,12 +274,7 @@ a:active a:visited {
 }
 
 @media (min-width:1400px) {
-  header>.menu>.ham>.bar {
-    visibility: hidden;
-    display: none;
-  }
-
-  header>.menu>.links {
+   header>.menu>.links {
     visibility: visible;
     display: flex;
     flex-direction: row;
@@ -315,7 +310,6 @@ a:active a:visited {
     flex-direction: row;
   }
 
-
   .reverse {
     flex-direction: row-reverse;
   }
@@ -333,6 +327,15 @@ a:active a:visited {
     font-size: 3rem ;
   }
 
+  .film {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+
   .site-footer {
     padding-bottom: 40px;
   }
@@ -342,7 +345,6 @@ a:active a:visited {
     text-align: center
   }
 
-
   .social-icons {
     display: flex;
     flex-direction: row;
@@ -351,8 +353,6 @@ a:active a:visited {
     list-style: none
   }
 
-  
-
   .social-icons title {
     margin-right: 15px;
     text-transform: uppercase;
@@ -360,7 +360,6 @@ a:active a:visited {
     font-weight: 700;
     font-size: 13px
   }
-
 
   .icon::after,
   .icon:focus,
@@ -386,6 +385,10 @@ a:active a:visited {
 
   .icon:hover {
     color: #007bb6
+  }
+
+  .video-card {
+    width: 30%;
   }
 
 }

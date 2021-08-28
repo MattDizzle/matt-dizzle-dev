@@ -1,8 +1,6 @@
 import React from 'react'
 
 export default function Card(props) {
-    let sourceCollection = props.source
-
 
     return (
         <section className={`card animate__animated animate__backInUp ${props.rev}`}>

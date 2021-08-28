@@ -3,7 +3,7 @@ import React from 'react'
 export default function VideoCard(props) {
 
     return (
-        <section className={`vide-card animate__animated animate__backInUp ${props.rev}`}>
+        <section className={`video-card animate__animated animate__backInUp ${props.rev}`}>
             <iframe src={props.source} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div className='card-text-box'>
             <h2>{props.title}</h2>

@@ -15,9 +15,9 @@ function App() {
   const [loading, setLoading] = useState(true);
   const toggleLoading = () => setLoading(false)
 
-  const timer = setTimeout(toggleLoading, 3000);
+  const timer = setTimeout(toggleLoading, 1500);
   if (loading) {
-    setTimeout(toggleLoading, 3000);
+    setTimeout(toggleLoading, 1500);
   }
 
   if (!loading) {
