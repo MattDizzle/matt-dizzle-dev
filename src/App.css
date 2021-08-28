@@ -211,6 +211,7 @@ header>.menu>.links {
   min-height: 90vh;
   display: flex;
   flex-direction: column;
+  background-blend-mode: darken;
 }
 
 .landing-h1 {
