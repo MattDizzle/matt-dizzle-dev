@@ -100,10 +100,8 @@ header>.menu>.links {
   color: white;
 }
 
-
-
 .card > img {
-  width: 50%;
+  width: 80%;
   align-self: center;
 }
 
@@ -251,8 +249,8 @@ a:active a:visited {
 }
 
 .video-card > iframe {
-  width: 100%;
   align-self: center;
+  min-height: 60%;
 }
 
 @media (min-width:400px) {
