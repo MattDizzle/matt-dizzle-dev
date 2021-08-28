@@ -12,6 +12,12 @@ import  nine  from "../images/9.jpg"
 import  ten  from "../images/10.jpg"
 import  eleven  from "../images/11.jpg"
 import  twelve  from "../images/12.jpg"
+import  thirteen  from "../images/13.jpg"
+import  fourteen  from "../images/19.jpg"
+import  fifteen  from "../images/20.jpg"
+import  sixteen  from "../images/16.jpg"
+import  seventeen  from "../images/17.jpg"
+import  eighteen  from "../images/18.jpg"
 
 export default function PhotoGallery() {
     const items = [
@@ -207,7 +213,102 @@ export default function PhotoGallery() {
                 },
             }
         },
-        
+        { 
+            itemId: 'differentItem',
+            mediaUrl: thirteen,
+            metaData: {
+                type: 'image',
+                height: 200,
+                width: 100,
+                title: 'sample-title',
+                description: 'sample-description',
+                focalPoint: [0, 0],
+                link: {
+                    url: 'http://example.com',
+                    target: '_blank'
+                },
+            }
+        },
+        { 
+            itemId: 'differentItem',
+            mediaUrl: fourteen,
+            metaData: {
+                type: 'image',
+                height: 200,
+                width: 100,
+                title: 'sample-title',
+                description: 'sample-description',
+                focalPoint: [0, 0],
+                link: {
+                    url: 'http://example.com',
+                    target: '_blank'
+                },
+            }
+        },
+        { 
+            itemId: 'differentItem',
+            mediaUrl: fifteen,
+            metaData: {
+                type: 'image',
+                height: 200,
+                width: 100,
+                title: 'sample-title',
+                description: 'sample-description',
+                focalPoint: [0, 0],
+                link: {
+                    url: 'http://example.com',
+                    target: '_blank'
+                },
+            }
+        },
+        { 
+            itemId: 'differentItem',
+            mediaUrl: sixteen,
+            metaData: {
+                type: 'image',
+                height: 200,
+                width: 100,
+                title: 'sample-title',
+                description: 'sample-description',
+                focalPoint: [0, 0],
+                link: {
+                    url: 'http://example.com',
+                    target: '_blank'
+                },
+            }
+        },
+        { 
+            itemId: 'differentItem',
+            mediaUrl: seventeen,
+            metaData: {
+                type: 'image',
+                height: 200,
+                width: 100,
+                title: 'sample-title',
+                description: 'sample-description',
+                focalPoint: [0, 0],
+                link: {
+                    url: 'http://example.com',
+                    target: '_blank'
+                },
+            }
+        },
+        { 
+            itemId: 'differentItem',
+            mediaUrl: eighteen,
+            metaData: {
+                type: 'image',
+                height: 200,
+                width: 100,
+                title: 'sample-title',
+                description: 'sample-description',
+                focalPoint: [0, 0],
+                link: {
+                    url: 'http://example.com',
+                    target: '_blank'
+                },
+            }
+        },
     ]
 
     // The options of the gallery (from the playground current state)
