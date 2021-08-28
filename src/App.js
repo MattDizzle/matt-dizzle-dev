@@ -11,7 +11,6 @@ import Graphics from './components/Graphics'
 import Film from './components/Film'
 import Contact from './components/Contact'
 import ScrollToTop from './helpers/ScrollToTop'
-import girl from './images/girl.png'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -37,7 +36,6 @@ function App() {
               <h1 className='landing-h1' id='dizzle'>DIZZLE</h1>
               <h1 className='landing-h1' id='dev'>DEV</h1>
             </div>
-            <img src={girl} alt='some-girl' id='girl' />
           </div>
 
           <main>
