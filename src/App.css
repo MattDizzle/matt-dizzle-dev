@@ -285,7 +285,6 @@ header>.menu>.links {
   min-height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .landing-h1-box {
