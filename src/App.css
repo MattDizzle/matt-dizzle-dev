@@ -27,9 +27,9 @@ font-family: 'Staatliches', cursive; */
     filter: blur(4px);
   }
 
-  70% {
+  75% {
     margin-left: 10vw;
-    filter: blur(2px);
+    filter: blur(0px);
   }
 
   to {
@@ -49,8 +49,8 @@ font-family: 'Staatliches', cursive; */
     filter: blur(4px);
   }
 
-  70% {
-    filter: blur(2px);
+  75% {
+    filter: blur(0px);
   }
 
   to {
@@ -70,15 +70,15 @@ font-family: 'Staatliches', cursive; */
     filter: blur(4px);
   }
 
-  70% {
-    filter: blur(2px);
+  75% {
+    filter: blur(0px);
   }
 
   to {
     margin-left: 25%;
     display: flex;
     opacity: 100%;
-    filter: blur(4px);
+    filter: blur(0px);
   }
 }
 
@@ -89,8 +89,8 @@ font-family: 'Staatliches', cursive; */
     filter: blur(5px);
   }
 
-  70% {
-    filter: blur(2px);
+  75% {
+    filter: blur(0px);
   }
 
   to {
@@ -108,8 +108,8 @@ font-family: 'Staatliches', cursive; */
     margin-left: 0%;
   }
 
-  70% {
-    filter: blur(2px);
+  75% {
+    filter: blur(0px);
   }
 
   to {
@@ -310,18 +310,18 @@ hr {
 }
 
 .landing-h1-box>#matt {
-  animation-duration: 5s;
+  animation-duration: 7s;
   animation-name: slidein;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   margin-left: 1vw;
   mix-blend-mode: exclusion;
   color: #185a9d;
 }
 
 .landing-h1-box>#dizzle {
-  animation-duration: 3s;
+  animation-duration: 7s;
   animation-name: slidein2;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   margin-left: 3vw;
   color: white;
   mix-blend-mode: difference;
@@ -329,9 +329,9 @@ hr {
 }
 
 .landing-h1-box>#dev {
-  animation-duration: 3s;
+  animation-duration: 7s;
   animation-name: slidein3;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   margin-left: 25%;
   mix-blend-mode: difference;
   color: #185a9d;
@@ -388,6 +388,17 @@ main {
 .nav>a {
   color: white;
   font-size: 1.4em;
+}
+
+#phone-link {
+  text-decoration: none;
+  font-size: 1.4em;
+  margin-bottom: 15%;
+}
+
+#phone-link:hover {
+  text-decoration: none;
+  color: #0058bd;
 }
 
 .social-icons>a {
