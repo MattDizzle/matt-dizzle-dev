@@ -232,16 +232,16 @@ header>.menu>.links {
   border-radius: 15px;
   border: 2px solid #185a9d;
   color: #185a9d;
-  width: 25%;
+  width: 40%;
   margin-left: 5vw;
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-family: 'kanit';
   animation-duration: 6s;
   animation-name: slidein4;
   animation-iteration-count: 1;
   margin-bottom: 5vh;
   background-blend-mode: difference;
-  padding: 10px;
+  padding: 7px;
   align-self: flex-start;
 }
 
