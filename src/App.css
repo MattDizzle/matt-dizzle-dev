@@ -208,14 +208,14 @@ header>.menu>.links {
   display: none;
 }
 
-#hire-me-btn {
+.landing-h1-box>#hire-me-btn {
   background-color: #E7ECEF;
   text-align: center;
   text-decoration: none;
   border-radius: 15px;
   border: 2px solid #185a9d;
   color: #185a9d;
-  width: 50vw;
+  width: 100%;
   margin-left: 5vw;
   font-size: 1.6em;
   font-family: 'kanit';
@@ -256,8 +256,8 @@ header>.menu>.links {
 
 .landing {
   background: linear-gradient(135deg, #185a9d, #43cea2);
-  background-blend-mode:normal;
-  filter:contrast(120%);
+  background-blend-mode: normal;
+  filter: contrast(120%);
   background-image: url('https://github.com/MattDizzle/favicon-host/blob/master/matt-dizzle-dev/matt2.jpg?raw=true');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -477,7 +477,7 @@ main {
 @media (min-height:700px) {
   #hire-me-btn {
     border-radius: 15px;
-    width: 50%;
+    width: 100%;
     min-height: 5vh;
     align-self: left;
   }
@@ -558,7 +558,8 @@ main {
   }
 
   #hire-me-btn {
-    width: 30%;
+    width: 70%;
+    align-self: center;
   }
 
   .landing {

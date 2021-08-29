@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './App.css';
-// import './App2.scss';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './components/Home';
@@ -36,8 +35,9 @@ function App() {
               <h1 className='landing-h1' id='matt'>MATT</h1>
               <h1 className='landing-h1' id='dizzle'>DIZZLE</h1>
               <h1 className='landing-h1' id='dev'>DEV</h1>
+              <Link id='hire-me-btn' to='./contact'> Hire Me </Link>
             </div>
-            <Link id='hire-me-btn' to='./contact'> Hire Me </Link>
+            
           </div>
 
           <main>
