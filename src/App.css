@@ -27,8 +27,9 @@ font-family: 'Staatliches', cursive; */
     filter: blur(4px);
   }
 
-  50% {
+  70% {
     margin-left: 10vw;
+    filter: blur(2px);
   }
 
   to {
@@ -48,9 +49,9 @@ font-family: 'Staatliches', cursive; */
     filter: blur(4px);
   }
 
-  /* 50% {
-    margin-left: 13vw;
-  } */
+  70% {
+    filter: blur(2px);
+  }
 
   to {
     margin-left: 3vw;
@@ -69,6 +70,10 @@ font-family: 'Staatliches', cursive; */
     filter: blur(4px);
   }
 
+  70% {
+    filter: blur(2px);
+  }
+
   to {
     margin-left: 16vw;
     display: flex;
@@ -83,6 +88,10 @@ font-family: 'Staatliches', cursive; */
     display: none;
     opacity: 0;
     filter: blur(5px);
+  }
+
+  70% {
+    filter: blur(2px);
   }
 
   to {
@@ -261,6 +270,10 @@ header>.menu>.links {
   flex-direction: column;
 }
 
+.landing-h1-box {
+  margin-top: 30vh;
+  z-index: 2;
+}
 
 .landing-h1 {
   font-size: 4em;
@@ -274,10 +287,8 @@ header>.menu>.links {
   animation-name: slidein;
   animation-iteration-count: 1;
   margin-left: 1vw;
-  /* color: white; */
   mix-blend-mode: exclusion;
-  filter: invert(20%);
-
+  color: #185a9d;
 }
 
 .landing-h1-box>#dizzle {
@@ -288,7 +299,6 @@ header>.menu>.links {
   color: white;
   mix-blend-mode: difference;
   filter: invert(20%);
-
 }
 
 .landing-h1-box>#dev {
@@ -296,20 +306,14 @@ header>.menu>.links {
   animation-name: slidein3;
   animation-iteration-count: 1;
   margin-left: 16vw;
-  /* color: white; */
   mix-blend-mode: difference;
-  filter: invert(20%);
+  color: #185a9d;
 }
 
 .landing-h1:hover {
   color: #0058bd;
   font-size: 5em;
   mix-blend-mode: difference;
-}
-
-.landing-h1-box {
-  margin-top: 40vh;
-  z-index: 2;
 }
 
 main {
@@ -359,7 +363,6 @@ main {
 }
 
 .social-icons>a {
-  /* color: white; */
   font-size: 1.0em;
 }
 
@@ -456,7 +459,6 @@ main {
   margin-left: 0;
   margin-right: 0;
   box-shadow: 0px 10px 12px -8px #dddddd;
-  ;
   margin: 1em auto;
   opacity: 0;
   transform: translateY(4em) rotateZ(-5deg);
@@ -475,7 +477,7 @@ main {
 @media (min-height:700px) {
   #hire-me-btn {
     border-radius: 15px;
-    width: 50vw;
+    width: 50%;
     min-height: 5vh;
     align-self: left;
   }
@@ -486,15 +488,9 @@ main {
   header>h1 {
     visibility: visible;
   }
-
-  header>.menu>.ham>.bar {
-    visibility: visible;
-  }
-
 }
 
 @media (min-width:1400px) {
-
   main {
     padding-left: 20px;
     padding-right: 20px;
@@ -561,8 +557,17 @@ main {
     visibility: hidden;
   }
 
+  #hire-me-btn {
+    width: 30%;
+  }
+
   .landing {
     min-height: 100vh;
+  }
+
+  .landing-h1-box {
+    margin-top: 25vh;
+    margin-left: 10vw;
   }
 
   .landing-h1 {
@@ -579,10 +584,6 @@ main {
     font-size: 10em;
   }
 
-  .landing-h1-box {
-    margin-top: 45vh;
-    margin-left: 10vw;
-  }
 
   .nav {
     visibility: hidden;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-// import './App.css';
-import './App2.scss';
+import './App.css';
+// import './App2.scss';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './components/Home';
