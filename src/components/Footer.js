@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className="site-footer">
       <div className="container">
         <div className="row">
-          
+
           <div className="footer-about-me">
             <h6>About</h6>
             <p className="footer-about-me-text">My name is Matthew and I live in Rialto, California. I'm an aspiring full stack web developer.
@@ -24,6 +24,17 @@ const Footer = () => {
               a ton of stuff about Integrating Multiple systems using a combination of Boomi and SuiteScript 2.0.
               Prior to this Internship I graduated from the Engineering Immersion Program where I learned Full-Stack Web
               Development using PostgreSQL, Express, React and Node.js through hands on learning, building multiple apps. </p>
+          </div>
+
+          <div className="quick-links">
+            <h6>Quick Links</h6>
+            <ul className="footer-links">
+              <li><a href="/">About Me</a></li>
+              <li><a href="contact">Contact Me</a></li>
+              <li><a href="contact">Book an Appointment</a></li>
+              <li><a href="/">Privacy Policy</a></li>
+              <li><a href="/">Sitemap</a></li>
+            </ul>
           </div>
 
           <div className="categories">
@@ -35,17 +46,6 @@ const Footer = () => {
               <li><a href="code">Postgres</a></li>
               <li><a href="code">MongoDB</a></li>
               <li><a href="graphics">Design</a></li>
-            </ul>
-          </div>
-
-          <div className="quick-links">
-            <h6>Quick Links</h6>
-            <ul className="footer-links">
-              <li><a href="/">About Me</a></li>
-              <li><a href="contact">Contact Me</a></li>
-              <li><a href="contact">Book an Appointment</a></li>
-              <li><a href="/">Privacy Policy</a></li>
-              <li><a href="/">Sitemap</a></li>
             </ul>
           </div>
 

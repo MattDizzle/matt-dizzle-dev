@@ -410,7 +410,7 @@ main {
   flex-direction: column;
   visibility: visible;
   padding-bottom: 100px;
-  margin-top: 20px;
+  padding-top: 0%;
 }
 
 .site-footer>.icon {
@@ -423,15 +423,14 @@ main {
   opacity: 0.5
 }
 
-.site-footer hr.small {
+/* .site-footer hr.small {
   margin: 20px 0
-}
+} */
 
 .site-footer h6 {
   color: #003c80;
   font-size: 16px;
   text-transform: uppercase;
-  margin-top: 5px;
   letter-spacing: 2px
 }
 
@@ -445,6 +444,18 @@ main {
   text-shadow: -8px -2px 13px #93dffa;
 }
 
+.footer-about-me {
+  margin-top: 20px;
+}
+
+.quick-links {
+  margin-top: 20px;
+}
+
+ .categories {
+  margin-top: 20px;
+}
+
 .footer-links:active,
 .footer-links:focus,
 .footer-links:hover {
@@ -453,13 +464,19 @@ main {
 }
 
 
-.site-footer .social-icons {
+/* .site-footer  {
+  font-size: 1.5em; 
+  display: flex;
+  width: 100%;
+  justify-content: space-around; 
+} */
+
+.social-icons {
   font-size: 1.5em;
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
-  margin-top: 20px;
 }
 
 .copyright-text {
@@ -655,6 +672,7 @@ main {
 
   .site-footer {
     padding-bottom: 40px;
+    padding-top: 0;
   }
 
   .row {
