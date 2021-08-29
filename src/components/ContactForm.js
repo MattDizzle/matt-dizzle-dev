@@ -24,9 +24,6 @@ const ContactForm = () => {
   };
   return (
     <form onSubmit={handleSubmit} className='contact-form'>
-
-      <div className='contact-text-box'>
-
         <div className='label-input'>
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" required />
@@ -41,10 +38,8 @@ const ContactForm = () => {
           <label htmlFor="message">Message:</label>
           <textarea id="message" required />
         </div>
-        
-        <button type="submit">{status}</button>
-      </div>
-
+      
+      <button type="submit">{status}</button>
     </form>
   );
 };
