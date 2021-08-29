@@ -30,6 +30,7 @@ font-family: 'Staatliches', cursive; */
 
   50% {
     margin-left: 10vw;
+    filter: blur(2px);
   }
 
   to {
@@ -49,9 +50,10 @@ font-family: 'Staatliches', cursive; */
     filter: blur(4px);
   }
 
-  /* 50% {
-    margin-left: 13vw;
-  } */
+  50% {
+    filter: blur(2px);
+    opacity: 0.5;
+  } 
 
   to {
     margin-left: 3vw;
@@ -70,11 +72,16 @@ font-family: 'Staatliches', cursive; */
     filter: blur(4px);
   }
 
+  50% {
+    filter: blur(2px);
+    opacity: 0.5;
+  } 
+
   to {
     margin-left: 16vw;
     display: flex;
-    opacity: 100%;
-    filter: blur(4px);
+    opacity: 1;
+    filter: blur(0px);
   }
 }
 
@@ -85,6 +92,11 @@ font-family: 'Staatliches', cursive; */
     opacity: 0;
     filter: blur(5px);
   }
+
+  50% {
+    filter: blur(2px);
+    opacity: 0.5;
+  } 
 
   to {
     margin-left: 7vw;
@@ -288,8 +300,8 @@ header>.menu>.links {
   animation-name: slidein2;
   animation-iteration-count: 1;
   margin-left: 3vw;
-  color: #703870;
-  
+  color: #ffffff;
+  filter: invert(20%);
 }
 
 .landing-h1-box>#dev {
