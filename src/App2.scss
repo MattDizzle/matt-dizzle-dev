@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Barlow+Semi+Condensed:wght@100&family=Bebas+Neue&family=Bree+Serif&family=Dhurjati&family=Encode+Sans+SC:wght@600&family=Francois+One&family=Kanit:wght@300&family=Kaushan+Script&family=Lato:wght@900&family=Libre+Barcode+128+Text&family=Luckiest+Guy&family=Permanent+Marker&family=Russo+One&family=Secular+One&family=Sedgwick+Ave+Display&family=Staatliches&display=swap');
 
+$fuchsia: #FF00FFff;
 /* font-family: 'Acme', sans-serif;
 font-family: 'Barlow Semi Condensed', sans-serif;
 font-family: 'Bebas Neue', cursive;
@@ -209,7 +210,6 @@ header>.menu>.links {
   width: 50vw;
   margin-left: 5vw;
   font-size: 1.6em;
-  font-family: 'kanit';
   animation-duration: 6s;
   animation-name: slidein4;
   animation-iteration-count: 1;
@@ -217,6 +217,8 @@ header>.menu>.links {
   margin-bottom: 5vh;
   background-blend-mode: difference;
   padding: 10px;
+  font-family: 'Francois One', sans-serif;
+
 }
 
 .icon-box {
@@ -274,21 +276,20 @@ header>.menu>.links {
   animation-name: slidein;
   animation-iteration-count: 1;
   margin-left: 1vw;
-  /* color: white; */
+  color: #185a9d; 
   mix-blend-mode: exclusion;
-  filter: invert(20%);
+  
 
 }
 
 .landing-h1-box>#dizzle {
+  mix-blend-mode:difference;
   animation-duration: 3s;
   animation-name: slidein2;
   animation-iteration-count: 1;
   margin-left: 3vw;
-  color: white;
-  mix-blend-mode: difference;
-  filter: invert(20%);
-
+  color: #703870;
+  
 }
 
 .landing-h1-box>#dev {
@@ -296,9 +297,8 @@ header>.menu>.links {
   animation-name: slidein3;
   animation-iteration-count: 1;
   margin-left: 16vw;
-  /* color: white; */
+  color: #185a9d; 
   mix-blend-mode: difference;
-  filter: invert(20%);
 }
 
 .landing-h1:hover {
