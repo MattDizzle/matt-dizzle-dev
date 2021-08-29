@@ -160,8 +160,9 @@ font-family: 'Staatliches', cursive; */
 }
 
 .contact-form>img {
-  width: 100%;
+  width: 90%;
   align-self: center;
+  border-radius: 15px;
 
 }
 
@@ -251,6 +252,11 @@ header>.menu>.links {
   flex-direction: column;
   color: #185a9d;
   font-size: 1.2em;
+  width: 100%;
+}
+
+.label-input > input {
+  width: 100%;
 }
 
 .label-input>textarea {
@@ -574,6 +580,11 @@ main {
 
   header>h1 {
     visibility: hidden;
+  }
+
+  .label-input {
+    font-size: 2em;
+    width: 100%;
   }
 
   .landing {
