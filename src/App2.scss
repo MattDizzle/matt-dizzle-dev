@@ -156,10 +156,11 @@ font-family: 'Staatliches', cursive; */
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  width: 100%;
 }
 
 .contact-form>img {
-  width: 70%;
+  width: 100%;
   align-self: center;
 
 }
@@ -523,6 +524,7 @@ main {
 
   .contact-form {
     flex-direction: row;
+    width: 100%;
   }
 
   .contact-text-box {
@@ -530,13 +532,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 5px;
     margin-right: auto;
     margin-left: auto;
+    width: 100%;
   }
 
   .contact-form>img {
-    width: 25%;
+    width: 100%;
     align-self: center;
   }
 
