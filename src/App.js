@@ -35,9 +35,8 @@ function App() {
               <h1 className='landing-h1' id='matt'>MATT</h1>
               <h1 className='landing-h1' id='dizzle'>DIZZLE</h1>
               <h1 className='landing-h1' id='dev'>DEV</h1>
-              <Link id='hire-me-btn' to='./contact'> Hire Me </Link>
             </div>
-            
+            <Link id='hire-me-btn' to='./contact'> Hire Me </Link>
           </div>
 
           <main>

@@ -26,13 +26,13 @@ export default function PhotoGallery() {
             mediaUrl: one,
             metaData: {
                 type: 'image',
-                height: 200,
+                height: 500,
                 width: 100,
                 title: 'sample-title',
                 description: 'sample-description',
                 focalPoint: [0, 0],
                 link: {
-                    url: '../images/12.jpg',
+                    url: 'https://github.com/MattDizzle/favicon-host/blob/master/matt-dizzle-dev/images/2.jpg?raw=true',
                     target: '_blank'
                 },
             }
@@ -313,7 +313,7 @@ export default function PhotoGallery() {
 
     // The options of the gallery (from the playground current state)
     const options = {
-        galleryLayout: -1,
+        galleryLayout: 3,
     };
 
     // The size of the gallery container. The images will fit themselves in it

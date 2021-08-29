@@ -75,7 +75,7 @@ font-family: 'Staatliches', cursive; */
   }
 
   to {
-    margin-left: 16vw;
+    margin-left: 25%;
     display: flex;
     opacity: 100%;
     filter: blur(4px);
@@ -84,7 +84,6 @@ font-family: 'Staatliches', cursive; */
 
 @keyframes slidein4 {
   from {
-    margin-left: 0;
     display: none;
     opacity: 0;
     filter: blur(5px);
@@ -95,11 +94,29 @@ font-family: 'Staatliches', cursive; */
   }
 
   to {
-    margin-left: 7vw;
     display: flex;
     opacity: 100%;
     filter: blur(0px);
 
+  }
+}
+@keyframes slidein5 {
+  from {
+    display: none;
+    opacity: 0;
+    filter: blur(5px);
+    margin-left: 0%;
+  }
+
+  70% {
+    filter: blur(2px);
+  }
+
+  to {
+    display: flex;
+    opacity: 100%;
+    filter: blur(0px);
+    margin-left: 20%;
   }
 }
 
@@ -208,24 +225,24 @@ header>.menu>.links {
   display: none;
 }
 
-.landing-h1-box>#hire-me-btn {
+#hire-me-btn {
   background-color: #E7ECEF;
   text-align: center;
   text-decoration: none;
   border-radius: 15px;
   border: 2px solid #185a9d;
   color: #185a9d;
-  width: 100%;
+  width: 25%;
   margin-left: 5vw;
   font-size: 1.6em;
   font-family: 'kanit';
   animation-duration: 6s;
   animation-name: slidein4;
   animation-iteration-count: 1;
-  margin-left: 7vw;
   margin-bottom: 5vh;
   background-blend-mode: difference;
   padding: 10px;
+  align-self: flex-start;
 }
 
 .icon-box {
@@ -268,6 +285,7 @@ header>.menu>.links {
   min-height: 90vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .landing-h1-box {
@@ -305,9 +323,10 @@ header>.menu>.links {
   animation-duration: 5s;
   animation-name: slidein3;
   animation-iteration-count: 1;
-  margin-left: 16vw;
+  margin-left: 25%;
   mix-blend-mode: difference;
   color: #185a9d;
+  transition: filer 3s;
 }
 
 .landing-h1:hover {
@@ -477,7 +496,7 @@ main {
 @media (min-height:700px) {
   #hire-me-btn {
     border-radius: 15px;
-    width: 100%;
+    width: 50%;
     min-height: 5vh;
     align-self: left;
   }
@@ -558,8 +577,8 @@ main {
   }
 
   #hire-me-btn {
-    width: 70%;
-    align-self: center;
+    width: 50%;
+    align-self: flex-start;
   }
 
   .landing {
@@ -567,7 +586,6 @@ main {
   }
 
   .landing-h1-box {
-    margin-top: 25vh;
     margin-left: 10vw;
   }
 
@@ -578,6 +596,15 @@ main {
     line-height: 4%;
     color: #0000FF;
     transition: font-size 2s, color 2s, transform 2s;
+  }
+
+  .landing-h1-box>#dev {
+    animation-duration: 5s;
+    animation-name: slidein5;
+    animation-iteration-count: 1;
+    margin-left: 20%;
+    mix-blend-mode: difference;
+    color: #185a9d;
   }
 
   .landing-h1:hover {
