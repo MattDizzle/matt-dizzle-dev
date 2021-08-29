@@ -163,17 +163,28 @@ font-family: 'Staatliches', cursive; */
   margin-top: 20px;
 }
 
-.contact-form {
+.contact-form-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  
 }
 
-.contact-form>img {
-  width: 70%;
+.contact-form-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  
+}
+
+.contact-form-page>img {
+  width: 40%;
   align-self: center;
+  border-radius: 15px;
 
 }
 
@@ -558,12 +569,15 @@ main {
   }
 
   .card>img {
-    width: 45%;
+    width: 35%;
   }
 
-  .contact-form {
+  .contact-form-page {
     flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-around;
   }
+  
 
   .contact-text-box {
     display: flex;
@@ -575,8 +589,8 @@ main {
     margin-left: auto;
   }
 
-  .contact-form>img {
-    width: 50%;
+  .contact-form-page>img {
+    width: 40%;
     align-self: center;
   }
 
