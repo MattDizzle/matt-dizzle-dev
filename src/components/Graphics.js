@@ -3,7 +3,7 @@ import PhotoGallery from './PhotoGallery'
 
 const Graphics = function Graphics(props) {
     return (
-        <div>
+        <div className='graphics-box'>
             <PhotoGallery />
         </div>
     )

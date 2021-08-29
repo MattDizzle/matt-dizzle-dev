@@ -191,6 +191,11 @@ form>textarea {
   margin: 5px;
 }
 
+.graphics-box {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
 header {
   width: 100%;
   display: flex;
