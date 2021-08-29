@@ -19,103 +19,83 @@ font-family: 'Sedgwick Ave Display', cursive;
 font-family: 'Staatliches', cursive; */
 
 /* Animations Functions*/
-@keyframes slidein {
+@keyframes slideinMatt {
   from {
     margin-left: 0;
     display: none;
     opacity: 0;
     filter: blur(4px);
-  }
-
-  75% {
-    margin-left: 10vw;
-    filter: blur(0px);
-  }
-
-  to {
+  } to {
     margin-left: 1vw;
     display: flex;
     opacity: 100%;
-    filter: blur(0px);
+    filter: blur(0);
 
   }
 }
 
-@keyframes slidein2 {
+@keyframes slideinDizzle {
   from {
     margin-left: 0;
     display: none;
     opacity: 0;
     filter: blur(4px);
-  }
-
-  75% {
-    filter: blur(0px);
-  }
-
-  to {
+  } to {
     margin-left: 3vw;
     display: flex;
     opacity: 100%;
-    filter: blur(0px);
+    filter: blur(0);
 
   }
 }
 
-@keyframes slidein3 {
+@keyframes slideinDev {
   from {
     margin-left: 0;
     display: none;
     opacity: 0;
     filter: blur(4px);
-  }
-
-  75% {
-    filter: blur(0px);
-  }
-
-  to {
+  } to {
     margin-left: 25%;
     display: flex;
     opacity: 100%;
-    filter: blur(0px);
+    filter: blur(0);
   }
 }
 
-@keyframes slidein4 {
+@keyframes slideinHireMe {
   from {
     display: none;
     opacity: 0;
     filter: blur(5px);
-  }
-
-  75% {
-    filter: blur(0px);
-  }
-
-  to {
+  } to {
     display: flex;
     opacity: 100%;
-    filter: blur(0px);
-
+    filter: blur(0);
   }
 }
-@keyframes slidein5 {
+@keyframes slideinIpad {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    margin-left: 0%;
+  } to {
+    opacity: 100%;
+    filter: blur(0);
+    margin-left: 15%;
+  }
+}
+
+@keyframes slideinDevDesk {
   from {
     display: none;
     opacity: 0;
     filter: blur(5px);
     margin-left: 0%;
-  }
-
-  75% {
-    filter: blur(0px);
-  }
-
-  to {
+  } to {
     display: flex;
     opacity: 100%;
-    filter: blur(0px);
+    filter: blur(0);
     margin-left: 20%;
   }
 }
@@ -255,23 +235,27 @@ header>.menu>.links {
 }
 
 #hire-me-btn {
-  background-color: #E7ECEF;
+  background: linear-gradient(135deg, #185a9d, #43cea2);
   text-align: center;
   text-decoration: none;
   border-radius: 15px;
   border: 2px solid #185a9d;
-  color: #185a9d;
+  color: rgba(255, 255, 255, 0.883);
   width: 40%;
   margin-left: 5vw;
   font-size: 1.2em;
   font-family: 'kanit';
   animation-duration: 3s;
-  animation-name: slidein4;
+  animation-name: slideinHireMe;
   animation-iteration-count: 1;
   margin-bottom: 5vh;
   background-blend-mode: difference;
   padding: 7px;
   align-self: flex-start;
+}
+
+#hire-me-btn:hover {
+  background: linear-gradient(135deg, hsla(210, 73%, 35%, 0.438), hsla(161, 59%, 54%, 0.5));
 }
 
 hr {
@@ -351,31 +335,33 @@ hr {
 
 .landing-h1-box>#matt {
   animation-duration: 7s;
-  animation-name: slidein;
+  animation-name: slideinMatt;
   animation-iteration-count: infinite;
   margin-left: 1vw;
-  mix-blend-mode: exclusion;
   color: #185a9d;
+  transition: margin-left;
+  transition-timing-function: linear;
 }
 
 .landing-h1-box>#dizzle {
   animation-duration: 7s;
-  animation-name: slidein2;
+  animation-name: slideinDizzle;
   animation-iteration-count: infinite;
   margin-left: 3vw;
   color: white;
-  mix-blend-mode: difference;
   filter: invert(20%);
+  transition: margin-left;
+  transition-timing-function: linear;
 }
 
 .landing-h1-box>#dev {
   animation-duration: 7s;
-  animation-name: slidein3;
+  animation-name: slideinDev;
   animation-iteration-count: infinite;
   margin-left: 25%;
-  mix-blend-mode: difference;
   color: #185a9d;
-  transition: filer 3s;
+  transition: margin-left;
+  transition-timing-function: linear;
 }
 
 .landing-h1:hover {
@@ -578,9 +564,51 @@ main {
 
 }
 
+/* Ipad 768x1024 */
 @media (min-width:700px) {
-  header>h1 {
-    visibility: visible;
+  .contact-form > button {
+    width: 50%;
+    min-height: 5vh;
+    background: linear-gradient(135deg, #185a9d, #43cea2);
+    border-radius: 15px;
+    margin: 10px;
+    align-self: center;
+    color: #ffffff;
+    font-size: 2em;
+  }
+
+  #hire-me-btn {
+    width: 30%;
+    margin-left: 7%;
+    font-size: 2em;
+  }
+
+  .label-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #185a9d;
+    font-size: 2em;
+    width: 80%;
+  }
+
+  .landing-h1-box {
+    margin-left: 6%;
+  }
+
+  .landing-h1-box>#dev {
+    animation-duration: 7s;
+    animation-name: slideinDevIpad;
+    animation-iteration-count: infinite;
+    margin-left: 15%;
+    color: #185a9d;
+    transition: margin-left;
+    transition-timing-function: linear;    
+  }
+
+  .nav>a {
+    font-size: 2em;
   }
 }
 
@@ -665,10 +693,10 @@ main {
   }
 
   #hire-me-btn {
-    width: 50%;
+    width: 25%;
     align-self: flex-start;
+    margin-left: 15vw;
   }
-
 
   .landing {
     min-height: 100vh;
@@ -689,7 +717,7 @@ main {
 
   .landing-h1-box>#dev {
     animation-duration: 5s;
-    animation-name: slidein5;
+    animation-name: slideInDevDesk;
     animation-iteration-count: 1;
     margin-left: 20%;
     mix-blend-mode: difference;
