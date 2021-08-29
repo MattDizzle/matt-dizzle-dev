@@ -23,29 +23,29 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
-    <>
-      <form onSubmit={handleSubmit} className='contact-form'>
-        <div className='contact-text-box'>
+    <form onSubmit={handleSubmit} className='contact-form'>
 
-        <a href="tel:+9095479183" id='phone-link'>Call Me: (909)547-9183</a>
+      <div className='contact-text-box'>
 
-          <div className='label-input'>
-            <label htmlFor="name">Name:</label>
-            <input type="text" id="name" required />
-          </div>
-          <div className='label-input'>
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" required />
-          </div>
-          <div className='label-input'>
-            <label htmlFor="message">Message:</label>
-            <textarea id="message" required />
-          </div>
-          <button type="submit">{status}</button>
+        <div className='label-input'>
+          <label htmlFor="name">Name:</label>
+          <input type="text" id="name" required />
         </div>
-      </form>
 
-    </>
+        <div className='label-input'>
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div className='label-input'>
+          <label htmlFor="message">Message:</label>
+          <textarea id="message" required />
+        </div>
+        
+        <button type="submit">{status}</button>
+      </div>
+
+    </form>
   );
 };
 

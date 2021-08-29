@@ -161,6 +161,7 @@ font-family: 'Staatliches', cursive; */
 
 .card-text-box {
   margin-top: 20px;
+  background: linear-gradient(135deg, #185a9d, #43cea2);
 }
 
 .contact-form-page {
@@ -169,37 +170,28 @@ font-family: 'Staatliches', cursive; */
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  
+  margin-bottom: 20px;
 }
 
-.contact-form-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  
-}
-
-.contact-form-page>img {
-  width: 40%;
+.image-phone>img {
+  width: 80%;
   align-self: center;
   border-radius: 15px;
-
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+.label-input>input {
+  margin-top: 10px;
+  width: 90%;
 }
 
-form>input {
-  margin: 5px;
+.label-input>textarea {
+  margin-top: 10px;
+  width: 90%;
 }
 
-form>textarea {
-  margin: 5px;
+.contact-text-box {
+  margin-top: 20px;
+  width: 90%;
 }
 
 .graphics-box {
@@ -219,7 +211,8 @@ header {
 }
 
 #header-logo {
-  width: 15vw;
+  width: 20vw;
+  filter: hue-rotate(290deg);
 }
 
 header>h1 {
@@ -278,15 +271,31 @@ hr {
   width: 20%;
 }
 
+.image-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .label-input {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: #185a9d;
   font-size: 1.2em;
+  width: 100%;
+}
+
+.label-input > label {
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 30px;
 }
 
 .label-input>textarea {
-  width: 100%;
+  width: 90%;
   min-height: 30vh;
   padding: 0;
   margin: 0;
@@ -404,12 +413,13 @@ main {
 #phone-link {
   text-decoration: none;
   font-size: 1.4em;
-  margin-bottom: 15%;
+  align-self: center;
+  padding: 10px;
+
 }
 
 #phone-link:hover {
-  text-decoration: none;
-  color: #0058bd;
+  color: #238bf3;
 }
 
 .social-icons>a {
@@ -450,9 +460,6 @@ main {
   opacity: 0.5
 }
 
-/* .site-footer hr.small {
-  margin: 20px 0
-} */
 
 .site-footer h6 {
   color: #003c80;
@@ -569,28 +576,38 @@ main {
   }
 
   .card>img {
-    width: 35%;
+    width: 40%;
+  }
+
+  .contact-form {
+    width: 50%;
   }
 
   .contact-form-page {
     flex-direction: row;
     margin-bottom: 20px;
-    justify-content: space-around;
+    justify-content: center;
   }
   
-
   .contact-text-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
     margin-right: auto;
     margin-left: auto;
+    background: linear-gradient(135deg, #185a9d, #43cea2);
+    border-radius: 15px;
+    width: 95%;
   }
 
-  .contact-form-page>img {
-    width: 40%;
+  .image-phone {
+    width: 50%;
+  }
+
+  .image-phone>img {
+    width: 100%;
     align-self: center;
   }
 
@@ -630,6 +647,10 @@ main {
   #hire-me-btn {
     width: 50%;
     align-self: flex-start;
+  }
+
+  .label-input {
+    color: white;
   }
 
   .landing {
