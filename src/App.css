@@ -236,13 +236,18 @@ header>.menu>.links {
   margin-left: 5vw;
   font-size: 1.2em;
   font-family: 'kanit';
-  animation-duration: 6s;
+  animation-duration: 3s;
   animation-name: slidein4;
   animation-iteration-count: 1;
   margin-bottom: 5vh;
   background-blend-mode: difference;
   padding: 7px;
   align-self: flex-start;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .icon-box {
@@ -319,7 +324,7 @@ header>.menu>.links {
 }
 
 .landing-h1-box>#dev {
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-name: slidein3;
   animation-iteration-count: 1;
   margin-left: 25%;
@@ -634,6 +639,11 @@ main {
     font-size: 3rem;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .film {
     display: flex;
     flex-direction: row;
@@ -645,6 +655,42 @@ main {
 
   .site-footer {
     padding-bottom: 40px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .footer-about-me .quick-links .categories {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quick-links ul .categories ul {
+    width: 30%;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .footer-about-me-text {
+    width: 30vw;
+    align-self: center;
+  }
+
+  .footer-links {
+    font-size: 1em;
+    list-style: none;
+    text-decoration: none;
+    text-decoration-line: none;
+    margin: 0;
+    padding: 0;
   }
 
   .site-footer .copyright-text,
