@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import './App.css';
+// import './App.css';
+import './App2.scss';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './components/Home';
 import Navigator from './components/Navigator'
 import LoadingScreen from './LoadingScreen/LoadingScreen'
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import Code from './components/Code'
 import Graphics from './components/Graphics'
 import Film from './components/Film'
@@ -36,6 +37,7 @@ function App() {
               <h1 className='landing-h1' id='dizzle'>DIZZLE</h1>
               <h1 className='landing-h1' id='dev'>DEV</h1>
             </div>
+            <Link id='hire-me-btn' to='./contact'> Hire Me </Link>
           </div>
 
           <main>
