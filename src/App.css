@@ -268,11 +268,18 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  background-color: #43cea2;
+  border-radius: 15px;
+  margin-top: 10px;
+  border: 2px solid #93dffa
 }
 
 .icon-box>img {
-  width: 20%;
+  width: 15%;
+  height: 15%;
+  margin: 10px;
+
 }
 
 .image-phone {
