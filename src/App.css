@@ -96,8 +96,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding: 0;
   width: 100%;
   background-color: #00000060;
 }
@@ -297,7 +296,7 @@ hr {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   min-height: 90vh;
   display: flex;
@@ -306,7 +305,7 @@ hr {
 
 .landing-h1-box {
   margin-top: 30vh;
-  width: 100%;
+  width: 90%;
 }
 
 .landing-h1 {
@@ -339,18 +338,19 @@ hr {
   color: #185a9d;
 }
 
-/* main {
+main {
   color: #E7ECEF;
-} */
+  width: 100%;
+}
 
-.menu-box {
+/* .menu-box {
   width: 100%;
   height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .nav {
   bottom: 0;
@@ -573,6 +573,10 @@ hr {
     color: #185a9d;
   }
 
+  main {
+    width: 100%;
+  }
+
   .nav>a {
     font-size: 2em;
   }
@@ -582,6 +586,7 @@ hr {
   main {
     padding-left: 20px;
     padding-right: 20px;
+    width: 100%;
   }
 
   .card {
@@ -666,10 +671,12 @@ hr {
 
   .landing {
     min-height: 100vh;
+    width: 100%;
   }
 
   .landing-h1-box {
     margin-left: 10vw;
+    width: 90%;
   }
 
   .landing-h1 {
@@ -691,10 +698,7 @@ hr {
 
   .landing-h1:hover {
     color: #ffffff;
-    font-size: 10em;
   }
-
-
   .nav {
     visibility: hidden;
   }
@@ -714,7 +718,7 @@ hr {
     font-size: 1rem;
   }
 
-  .card-text-box>h1p {
+  .card-text-box>h1 p {
     margin-top: 10px;
     font-size: 3rem;
   }
