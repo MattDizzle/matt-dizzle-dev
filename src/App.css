@@ -1,22 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barlow+Semi+Condensed:wght@100&family=Bebas+Neue&family=Bree+Serif&family=Dhurjati&family=Encode+Sans+SC:wght@600&family=Francois+One&family=Kanit:wght@300&family=Kaushan+Script&family=Lato:wght@900&family=Libre+Barcode+128+Text&family=Luckiest+Guy&family=Permanent+Marker&family=Russo+One&family=Secular+One&family=Sedgwick+Ave+Display&family=Staatliches&display=swap');
-
-/* font-family: 'Acme', sans-serif;
-font-family: 'Barlow Semi Condensed', sans-serif;
-font-family: 'Bebas Neue', cursive;
-font-family: 'Bree Serif', serif;
-font-family: 'Dhurjati', sans-serif;
-font-family: 'Encode Sans SC', sans-serif;
-font-family: 'Francois One', sans-serif;
-font-family: 'Kanit', sans-serif;
-font-family: 'Kaushan Script', cursive;
-font-family: 'Lato', sans-serif;
-font-family: 'Libre Barcode 128 Text', cursive;
-font-family: 'Luckiest Guy', cursive;
-font-family: 'Permanent Marker', cursive;
-font-family: 'Russo One', sans-serif;
-font-family: 'Secular One', sans-serif;
-font-family: 'Sedgwick Ave Display', cursive;
-font-family: 'Staatliches', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barlow+Semi+Condensed:wght@100&family=Bebas+Neue&family=Bree+Serif&family=Dhurjati&family=Encode+Sans+SC:wght@600&family=Francois+One&family=Kanit:wght@300&display=swap');
 
 /* Animations Functions*/
 @keyframes slideinMatt {
@@ -28,7 +10,7 @@ font-family: 'Staatliches', cursive; */
     margin-left: 10vw;
   } to {
     margin-left: 1vw;
-    opacity: 100%;
+    opacity: 1;
     filter: blur(0);
 
   }
@@ -41,7 +23,7 @@ font-family: 'Staatliches', cursive; */
     filter: blur(4px);
   } to {
     margin-left: 3vw;
-    opacity: 100%;
+    opacity: 1;
     filter: blur(0);
 
   }
@@ -54,7 +36,7 @@ font-family: 'Staatliches', cursive; */
     filter: blur(4px);
   } to {
     margin-left: 25%;
-    opacity: 100%;
+    opacity: 1;
     filter: blur(0);
   }
 }
@@ -74,7 +56,7 @@ font-family: 'Staatliches', cursive; */
     filter: blur(5px);
     margin-left: 0%;
   } to {
-    opacity: 100%;
+    opacity: 1;
     filter: blur(0);
     margin-left: 15%;
   }
@@ -86,7 +68,7 @@ font-family: 'Staatliches', cursive; */
     filter: blur(5px);
     margin-left: 0%;
   } to {
-    opacity: 100%;
+    opacity: 1;
     filter: blur(0);
     margin-left: 20%;
   }
@@ -355,15 +337,9 @@ hr {
   color: #185a9d;
 }
 
-.landing-h1:hover {
-  color: #0058bd;
-  font-size: 5em;
-  mix-blend-mode: difference;
-}
-
-main {
+/* main {
   color: #E7ECEF;
-}
+} */
 
 .menu-box {
   width: 100%;
