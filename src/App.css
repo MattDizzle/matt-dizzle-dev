@@ -98,7 +98,7 @@
   height: 100vh;
   padding: 0;
   width: 100%;
-  background-color: #00000060;
+  background-color: #ffffff;
 }
 
 .card {
@@ -339,7 +339,7 @@ hr {
 }
 
 main {
-  color: #E7ECEF;
+  color: #ffffff;
   width: 100%;
 }
 
