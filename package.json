@@ -50,8 +50,6 @@
     ]
   },
   "devDependencies": {
-    "@types/react": "^17.0.18",
-    "sass": "^1.38.2",
-    "sass-loader": "^12.1.0"
+    "@types/react": "^17.0.18"
   }
 }

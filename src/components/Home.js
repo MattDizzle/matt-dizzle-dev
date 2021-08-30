@@ -8,6 +8,12 @@ const Home = () => {
         <img alt='nodejs logo' src="https://img.icons8.com/color/100/000000/nodejs.png"/>
         <img alt='adobe logo' src="https://img.icons8.com/ios-filled/50/000000/adobe-logo.png"/>
         <img alt='photoshop logo' src="https://img.icons8.com/ios-glyphs/60/000000/adobe-photoshop.png"/>
+        <img alt='photoshop logo' src="https://img.icons8.com/ios-glyphs/60/000000/adobe-photoshop.png"/>
+        <img alt='photoshop logo' src="https://img.icons8.com/ios-glyphs/60/000000/adobe-photoshop.png"/>
+        <img alt='photoshop logo' src="https://img.icons8.com/ios-glyphs/60/000000/adobe-photoshop.png"/>
+        <img alt='photoshop logo' src="https://img.icons8.com/ios-glyphs/60/000000/adobe-photoshop.png"/>
+        <img alt='photoshop logo' src="https://img.icons8.com/ios-glyphs/60/000000/adobe-photoshop.png"/>
+        <img alt='photoshop logo' src="https://img.icons8.com/ios-glyphs/60/000000/adobe-photoshop.png"/>
     </>
     return (
         <section>
