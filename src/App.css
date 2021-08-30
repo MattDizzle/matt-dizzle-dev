@@ -22,14 +22,12 @@ font-family: 'Staatliches', cursive; */
 @keyframes slideinMatt {
   from {
     margin-left: 0;
-    display: none;
     opacity: 0;
     filter: blur(4px);
   } 50% {
     margin-left: 10vw;
   } to {
     margin-left: 1vw;
-    display: flex;
     opacity: 100%;
     filter: blur(0);
 
@@ -39,12 +37,10 @@ font-family: 'Staatliches', cursive; */
 @keyframes slideinDizzle {
   from {
     margin-left: 0;
-    display: none;
     opacity: 0;
     filter: blur(4px);
   } to {
     margin-left: 3vw;
-    display: flex;
     opacity: 100%;
     filter: blur(0);
 
@@ -54,12 +50,10 @@ font-family: 'Staatliches', cursive; */
 @keyframes slideinDev {
   from {
     margin-left: 0;
-    display: none;
     opacity: 0;
     filter: blur(4px);
   } to {
     margin-left: 25%;
-    display: flex;
     opacity: 100%;
     filter: blur(0);
   }
@@ -67,11 +61,9 @@ font-family: 'Staatliches', cursive; */
 
 @keyframes slideinHireMe {
   from {
-    display: none;
     opacity: 0;
     filter: blur(5px);
   } to {
-    display: flex;
     opacity: 100%;
     filter: blur(0);
   }
@@ -338,7 +330,7 @@ hr {
 .landing-h1-box>#matt {
   animation-duration: 7s;
   animation-name: slideinMatt;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   margin-left: 1vw;
   color: #185a9d;
 }
@@ -346,7 +338,7 @@ hr {
 .landing-h1-box>#dizzle {
   animation-duration: 7s;
   animation-name: slideinDizzle;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   margin-left: 3vw;
   color: white;
   filter: invert(50%);
@@ -358,7 +350,7 @@ hr {
 .landing-h1-box>#dev {
   animation-duration: 7s;
   animation-name: slideinDev;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   margin-left: 25%;
   color: #185a9d;
 }
@@ -599,7 +591,7 @@ main {
   .landing-h1-box>#dev {
     animation-duration: 7s;
     animation-name: slideinDevIpad;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     margin-left: 15%;
     color: #185a9d;   
   }
@@ -715,7 +707,7 @@ main {
   .landing-h1-box>#dev {
     animation-duration: 7s;
     animation-name: slideinDevDesk;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     margin-left: 20%;
     color: #185a9d;
   }
