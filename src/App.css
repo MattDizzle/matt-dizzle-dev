@@ -3,38 +3,47 @@
 /* Animations Functions*/
 @keyframes slideinMatt {
   from {
-    margin-left: 0;
+    margin-left: 0%;
     opacity: 0;
-    filter: blur(4px);
-  } 50% {
-    margin-left: 10vw;
-  } to {
+    filter: blur(5px);
+  }
+
+  50% {
+    margin-left: 10%;
+  }
+
+  to {
     margin-left: 1vw;
     opacity: 1;
-    filter: blur(0);
+    filter: blur(0px);
 
   }
 }
 
 @keyframes slideinDizzle {
   from {
-    margin-left: 0;
+    color: white;
+    margin-left: 0%;
     opacity: 0;
-    filter: blur(4px);
-  } to {
-    margin-left: 3vw;
-    opacity: 1;
-    filter: blur(0);
+    filter: blur(5px);
+  }
 
+  to {
+    margin-left: 5%;
+    opacity: 1;
+    filter: blur(0px);
+    color: white;
   }
 }
 
 @keyframes slideinDev {
   from {
-    margin-left: 0;
+    margin-left: 0%;
     opacity: 0;
-    filter: blur(4px);
-  } to {
+    filter: blur(5px);
+  }
+
+  to {
     margin-left: 25%;
     opacity: 1;
     filter: blur(0);
@@ -45,19 +54,24 @@
   from {
     opacity: 0;
     filter: blur(5px);
-  } to {
-    opacity: 100%;
-    filter: blur(0);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0px);
   }
 }
+
 @keyframes slideinIpad {
   from {
     opacity: 0;
     filter: blur(5px);
     margin-left: 0%;
-  } to {
+  }
+
+  to {
     opacity: 1;
-    filter: blur(0);
+    filter: blur(0px);
     margin-left: 15%;
   }
 }
@@ -67,9 +81,11 @@
     opacity: 0;
     filter: blur(5px);
     margin-left: 0%;
-  } to {
+  }
+
+  to {
     opacity: 1;
-    filter: blur(0);
+    filter: blur(0px);
     margin-left: 20%;
   }
 }
@@ -83,7 +99,7 @@
   padding-bottom: 0;
   padding-left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.376);
+  background-color: #00000060;
 }
 
 .card {
@@ -96,22 +112,15 @@
   margin-bottom: 5px;
   margin-left: 0;
   margin-right: 0;
-  box-shadow: 0px 10px 12px -8px #dddddd;
   margin: 1em auto;
   border-radius: 10px;
   color: white;
-  z-index: 5;
 }
 
 .card>img {
   width: 100%;
   align-self: center;
 }
-
-/* .card-text-box {
-  margin-top: 20px;
-  background: linear-gradient(135deg, #185a9d, #43cea2);
-} */
 
 .contact-form-page {
   display: flex;
@@ -133,7 +142,7 @@
   align-items: center;
 }
 
-.contact-form > button {
+.contact-form>button {
   width: 80%;
   background: linear-gradient(135deg, #185a9d, #43cea2);
   border-radius: 15px;
@@ -268,7 +277,7 @@ hr {
   width: 100%;
 }
 
-.label-input > label {
+.label-input>label {
   text-align: left;
   align-self: flex-start;
   margin-left: 30px;
@@ -282,8 +291,6 @@ hr {
 }
 
 .landing {
-  background: linear-gradient(135deg, #185a9d, #43cea2);
-  background-blend-mode: normal;
   filter: contrast(120%);
   background-image: url('https://github.com/MattDizzle/favicon-host/blob/master/matt-dizzle-dev/matt2.jpg?raw=true');
   background-repeat: no-repeat;
@@ -299,20 +306,19 @@ hr {
 
 .landing-h1-box {
   margin-top: 30vh;
-  z-index: 2;
+  width: 100%;
 }
 
 .landing-h1 {
-  font-size: 4em;
-  color: white;
-  line-height: 7%;
-  transition: margin-left 5s font-size 2s, color 2s, transform 2s;
+  font-size: 3.5em;
+  line-height: 0.10;
+  /* transition: margin-left 5s, color 2s, transform 2s; */
 }
 
 .landing-h1-box>#matt {
   animation-duration: 7s;
   animation-name: slideinMatt;
-  animation-iteration-count: 1;
+  animation-iteration-count: 3;
   margin-left: 1vw;
   color: #185a9d;
 }
@@ -321,18 +327,14 @@ hr {
   animation-duration: 7s;
   animation-name: slideinDizzle;
   animation-iteration-count: 1;
-  margin-left: 3vw;
+  margin-left: 5%;
   color: white;
-  filter: invert(50%);
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: linear-gradient(135deg, #dddbdd , #43cea2, #43cea2,#185b9d );
-  stroke: linear-gradient(135deg, #43cea2,#185b9d );
 }
 
 .landing-h1-box>#dev {
   animation-duration: 7s;
   animation-name: slideinDev;
-  animation-iteration-count: 1;
+  animation-iteration-count: 3;
   margin-left: 25%;
   color: #185a9d;
 }
@@ -361,7 +363,6 @@ hr {
   height: 10vh;
   align-items: center;
   margin-left: 0;
-  z-index: 2;
 }
 
 .nav>.icon {
@@ -459,7 +460,7 @@ hr {
   margin-top: 20px;
 }
 
- .categories {
+.categories {
   margin-top: 20px;
 }
 
@@ -533,7 +534,7 @@ hr {
 
 /* Ipad 768x1024 */
 @media (min-width:700px) {
-  .contact-form > button {
+  .contact-form>button {
     width: 50%;
     min-height: 5vh;
     background: linear-gradient(135deg, #185a9d, #43cea2);
@@ -567,9 +568,9 @@ hr {
   .landing-h1-box>#dev {
     animation-duration: 7s;
     animation-name: slideinDevIpad;
-    animation-iteration-count: 1;
+    animation-iteration-count: 3;
     margin-left: 15%;
-    color: #185a9d;   
+    color: #185a9d;
   }
 
   .nav>a {
@@ -601,7 +602,7 @@ hr {
     margin-bottom: 20px;
     justify-content: center;
   }
-  
+
   .contact-text-box {
     display: flex;
     flex-direction: column;
@@ -683,7 +684,7 @@ hr {
   .landing-h1-box>#dev {
     animation-duration: 7s;
     animation-name: slideinDevDesk;
-    animation-iteration-count: 1;
+    animation-iteration-count: 3;
     margin-left: 20%;
     color: #185a9d;
   }
@@ -700,7 +701,7 @@ hr {
 
   .reverse {
     flex-direction: row-reverse;
-    background: linear-gradient(135deg, #dddbdd , #43cea2, #43cea2,#185b9d );
+    background: linear-gradient(135deg, #dddbdd, #43cea2, #43cea2, #185b9d);
 
   }
 
@@ -751,7 +752,7 @@ hr {
     justify-content: center;
     align-items: center;
   }
-  
+
   .quick-links ul .categories ul {
     width: 30%;
     margin-left: 0;
