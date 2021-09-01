@@ -4,20 +4,19 @@ import Card from './Card'
 const Home = () => {
 
     const skillsIcon = <>
-        <img alt='photoshop logo' src="https://github.com/MattDizzle/favicon-host/blob/master/icons/psql3.png?raw=true" />
-        <img alt='photoshop logo' src="https://github.com/MattDizzle/favicon-host/blob/master/icons/ExpressJS.png?raw=true" />
-        <img alt='react logo' src="https://img.icons8.com/office/100/000000/react.png" />
-        <img alt='nodejs logo' src="https://img.icons8.com/color/100/000000/nodejs.png" />
-        <img alt='photoshop logo' src="https://github.com/MattDizzle/favicon-host/blob/master/icons/mongo-db-logo.png?raw=true" />
-        <img alt='heroku logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/ff109f163c42493f609a773a0be30156fb7ab674/icons/github%20(2).svg" />
-        <img alt='heroku logo' src="https://github.com/MattDizzle/favicon-host/blob/master/icons/heroku-logo-1.png?raw=true" />
-        <img alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129901.svg" />
-        <img alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129913.svg" />
-        <img alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129894.svg" />
-        <img alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129897.svg" />
-        <img alt='photoshop logo' src="https://github.com/MattDizzle/favicon-host/blob/master/icons/Outlook-Emblem.png?raw=true" />
-
-        {/* <img alt='photoshop logo' src=""/> */}
+        <img className='skills-logos' alt='photoshop logo' src="https://github.com/MattDizzle/favicon-host/blob/master/icons/express.png?raw=true" />
+        <img className='skills-logos' alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/master/icons/postgresql.svg" />
+        <img className='skills-logos' alt='react logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/master/icons/react.svg" />
+        <img className='skills-logos' alt='nodejs logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/master/icons/nodejs.svg" />
+        <img className='skills-logos' alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/master/icons/mongodb.svg" />
+        <img className='skills-logos' alt='heroku logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/ff109f163c42493f609a773a0be30156fb7ab674/icons/github%20(2).svg" />
+        <img className='skills-logos' alt='heroku logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/master/icons/heroku.svg" />
+        <img className='skills-logos' alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/master/office-365-1/svg/microsoft-terms-and-office-1194339.svg" />
+        <img className='skills-logos' alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129901.svg" />
+        <img className='skills-logos' alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129913.svg" />
+        <img className='skills-logos' alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129894.svg" />
+        <img className='skills-logos' alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129897.svg" />
+       
 
     </>
     return (
