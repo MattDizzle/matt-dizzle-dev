@@ -126,8 +126,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 15vh;
+  margin-bottom: 3vh;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
@@ -148,6 +148,13 @@
   margin: 10px;
   align-self: center;
   color: #ffffff;
+}
+
+.copyright-text {
+  margin: 10px;
+  margin-bottom: 30px;
+  font-size: 0.6em;
+  text-align: center;
 }
 
 .image-phone>img {
@@ -189,7 +196,6 @@ header {
 
 #header-logo {
   width: 20vw;
-  filter: hue-rotate(290deg);
 }
 
 header>h1 {
@@ -386,10 +392,18 @@ main {
 
 #phone-link {
   text-decoration: none;
-  font-size: 1.4em;
+  font-size: 2em;
   align-self: center;
   padding: 10px;
-
+  margin: 5vh;
+  word-spacing: 5px;
+  width: 80%;
+  background: linear-gradient(135deg, #185a9d, #43cea2);
+  border-radius: 15px;
+  margin: 10px;
+  align-self: center;
+  color: #ffffff;
+  text-align: center;
 }
 
 #phone-link:hover {
@@ -472,23 +486,12 @@ main {
 }
 
 
-/* .site-footer  {
-  font-size: 1.5em; 
-  display: flex;
-  width: 100%;
-  justify-content: space-around; 
-} */
-
 .social-icons {
   font-size: 1.5em;
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
-}
-
-.copyright-text {
-  margin: 0
 }
 
 .video-card {
@@ -545,6 +548,11 @@ main {
     font-size: 2em;
   }
 
+  .copyright-text {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+
   #hire-me-btn {
     width: 30%;
     margin-left: 7%;
@@ -579,6 +587,25 @@ main {
 
   .nav>a {
     font-size: 2em;
+  }
+
+  #phone-link {
+    width: 50%;
+   
+  }
+
+  .site-footer {
+    background: linear-gradient(0deg, #185a9d, #43cea2, #43cea2);
+    padding: 80px 10px 20px;
+    font-size: 15px;
+    color: #003c80;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    padding-bottom: 10vh;
+    margin-bottom: 10vh;
+    padding-top: 0%;
   }
 }
 
@@ -619,6 +646,11 @@ main {
     background: linear-gradient(135deg, #185a9d, #43cea2);
     border-radius: 15px;
     width: 95%;
+  }
+
+  .copyright-text {
+    font-size: 0.8em;
+    text-align: center;
   }
 
   .image-phone {

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../images/matt-dizzle-dev-logo.png'
+import logo from '../images/transparent-matt-dizzle-logo-green-and-blue.png'
 import { Link } from "react-router-dom";
 
 const Header = () => {
