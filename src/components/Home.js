@@ -9,10 +9,12 @@ const Home = () => {
         <img alt='react logo' src="https://img.icons8.com/office/100/000000/react.png" />
         <img alt='nodejs logo' src="https://img.icons8.com/color/100/000000/nodejs.png" />
         <img alt='photoshop logo' src="https://github.com/MattDizzle/favicon-host/blob/master/icons/mongo-db-logo.png?raw=true" />
+        <img alt='heroku logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/ff109f163c42493f609a773a0be30156fb7ab674/icons/github%20(2).svg" />
         <img alt='heroku logo' src="https://github.com/MattDizzle/favicon-host/blob/master/icons/heroku-logo-1.png?raw=true" />
-        <img alt='photoshop logo' src="https://github.com/MattDizzle/favicon-host/blob/master/icons/Adobe_XD_CC_icon.svg.png?raw=true" />
-        <img alt='photoshop logo' src="https://github.com/MattDizzle/favicon-host/blob/master/icons/Adobe_After_Effects_CC_icon.svg.png?raw=true" />
-        <img alt='photoshop logo' src="https://github.com/MattDizzle/favicon-host/blob/master/icons/audition-logo.png?raw=true" />
+        <img alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129901.svg" />
+        <img alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129913.svg" />
+        <img alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129894.svg" />
+        <img alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129897.svg" />
         <img alt='photoshop logo' src="https://github.com/MattDizzle/favicon-host/blob/master/icons/Outlook-Emblem.png?raw=true" />
 
         {/* <img alt='photoshop logo' src=""/> */}
