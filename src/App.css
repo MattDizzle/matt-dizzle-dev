@@ -398,13 +398,10 @@ main {
   align-self: center;
   padding: 10px;
   margin: 5vh;
-  word-spacing: 5px;
-  width: 80%;
-  background: linear-gradient(135deg, #185a9d, #43cea2);
   border-radius: 15px;
   margin: 10px;
   align-self: center;
-  color: #ffffff;
+  color: #185a9d;
   text-align: center;
 }
 
