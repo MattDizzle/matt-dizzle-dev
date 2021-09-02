@@ -280,10 +280,10 @@ main {
   width: 100vw;
   position: fixed;
   align-items: center;
-  border: solid 2px #000000 ;
+  border: solid 2px #0D7377 ;
   border-radius: 50%;
   font-size: 2em;
-  color: #000000;
+  color: #0D7377;
   right: 5;
   top:10;
   z-index: 10;
