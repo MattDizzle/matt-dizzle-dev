@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Barlow+Semi+Condensed:wght@100&family=Bebas+Neue&family=Bree+Serif&family=Dhurjati&family=Encode+Sans+SC:wght@600&family=Francois+One&family=Kanit:wght@300&family=Kaushan+Script&family=Lato:wght@900&family=Libre+Barcode+128+Text&family=Luckiest+Guy&family=Permanent+Marker&family=Russo+One&family=Secular+One&family=Sedgwick+Ave+Display&family=Staatliches&display=swap');
 
 .ring {
-  width: 80vw;
+  width: 75vw;
   pointer-events: none;
+}
+
+.logo{
+  width: 75vw;
+  position: absolute;
+  animation: ring-spin;
 }
 
 .loading-box {
@@ -13,13 +19,6 @@
   height: 100vh;
 }
 
-.loading-box>span {
-  font-family: 'Kanit', sans-serif;
-  font-size: 2rem;
-  position: absolute;
-  color: aliceblue;
-
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .ring {
@@ -27,13 +26,14 @@
 
   }
 
-  .loading-box {
-    animation: color-change 2s infinite 500ms;
+  .logo{
+    animation: logo-spin 1 2s linear;
   }
 
-  .loading-box>span {
-    animation: pulse 2s infinite 100ms;
+  .loading-box {
+    animation: color-change 2.5s 1 500ms;
   }
+
 }
 
 @keyframes ring-spin {
@@ -46,18 +46,40 @@
   }
 }
 
-@keyframes color-change {
+@keyframes logo-spin {
   from {
-    background-color: #005881;
+    transform: rotate(45deg);
   }
 
   to {
-    background-color: #003c80;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes color-change {
+  from {
+    background-color: #0D7377;
+  }
+
+  50% {
+    background-color: #185a9d;
+  }
+  80% {
+    background-color: #212121;
+  }
+
+  to {
+    background-color: #212121;
   }
 }
 
 @media only screen and (min-width: 990px) {
   .ring {
+    width: 20vw;
+    pointer-events: none;
+  }
+  
+  .logo {
     width: 20vw;
     pointer-events: none;
   }

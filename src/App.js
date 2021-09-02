@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './App.css';
+import './helpers/animations.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './components/Home';
@@ -18,7 +19,7 @@ function App() {
   const toggleLoading = () => setLoading(false)
 
    useEffect(() => {
-    const timer = setTimeout(toggleLoading, 1500);
+    const timer = setTimeout(toggleLoading, 3000);
     if (!loading) {
       clearTimeout(timer);
     }
@@ -37,9 +38,9 @@ function App() {
             <Link id='hire-me-btn' to='./contact'> Hire Me </Link>
           </div>
 
-          <main>
+          <main className='animate__animated animate__fadeInUp'>
             <ScrollToTop />
-            <ScrollButton class='main-scroll' />
+            <ScrollButton class='main-scroll animate__animated animate__fadeInDown' />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/code" component={Code} />

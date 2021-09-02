@@ -1,18 +1,11 @@
 import React from 'react'
 import ScrollButton from './ScrollButton'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fab)
 
 const Footer = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
+
   return (
     <footer className="site-footer">
       <div className="container">
@@ -64,7 +57,6 @@ const Footer = () => {
           <div className="social-icons">
             <a href='https://linkedin.com/in/matthew-rougely' target='blank' ><i className="fab fa-linkedin-in icon" /></a>
             <a href='https://github.com/MattDizzle' target='blank' ><i className="fab fa-github icon" /></a>
-            {/* <FontAwesomeIcon onClick={scrollToTop} className='icon' icon={faArrowUp} /> */}
             <ScrollButton class='icon' />
           </div>
         </div>

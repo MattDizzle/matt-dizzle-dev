@@ -1,95 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Barlow+Semi+Condensed:wght@100&family=Bebas+Neue&family=Bree+Serif&family=Dhurjati&family=Encode+Sans+SC:wght@600&family=Francois+One&family=Kanit:wght@300&display=swap');
 
-/* Animations Functions*/
-@keyframes slideinMatt {
-  from {
-    margin-left: 0%;
-    opacity: 0;
-    filter: blur(5px);
-  }
-
-  50% {
-    margin-left: 10%;
-  }
-
-  to {
-    margin-left: 1vw;
-    opacity: 1;
-    filter: blur(0px);
-
-  }
-}
-
-@keyframes slideinDizzle {
-  from {
-    color: white;
-    margin-left: 0%;
-    opacity: 0;
-    filter: blur(5px);
-  }
-
-  to {
-    margin-left: 5%;
-    opacity: 1;
-    filter: blur(0px);
-    color: white;
-  }
-}
-
-@keyframes slideinDev {
-  from {
-    margin-left: 0%;
-    opacity: 0;
-    filter: blur(5px);
-  }
-
-  to {
-    margin-left: 25%;
-    opacity: 1;
-    filter: blur(0);
-  }
-}
-
-@keyframes slideinHireMe {
-  from {
-    opacity: 0;
-    filter: blur(5px);
-  }
-
-  to {
-    opacity: 1;
-    filter: blur(0px);
-  }
-}
-
-@keyframes slideinIpad {
-  from {
-    opacity: 0;
-    filter: blur(5px);
-    margin-left: 0%;
-  }
-
-  to {
-    opacity: 1;
-    filter: blur(0px);
-    margin-left: 15%;
-  }
-}
-
-@keyframes slideinDevDesk {
-  from {
-    opacity: 0;
-    filter: blur(5px);
-    margin-left: 0%;
-  }
-
-  to {
-    opacity: 1;
-    filter: blur(0px);
-    margin-left: 20%;
-  }
-}
-
 .App {
   margin: 0;
   font-family: Kanit, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -98,10 +8,11 @@
   height: 100vh;
   padding: 0;
   width: 100%;
+  background-color: #212121;
 }
 
 .card {
-  background: linear-gradient(135deg, #185b9d, #43cea2, #43cea2, #dddbdd3a);
+  background-color: #323232;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -142,11 +53,16 @@
 
 .contact-form>button {
   width: 80%;
-  background: linear-gradient(135deg, #185a9d, #43cea2);
+  background-color: #323232;
   border-radius: 15px;
   margin: 10px;
   align-self: center;
-  color: #ffffff;
+  color: #14FFEC;
+}
+
+.contact-form>button:hover {
+  background-color: #14FFEC;
+  color: #323232;
 }
 
 .copyright-text {
@@ -199,23 +115,17 @@ header {
   padding: 10px;
   margin-top: 10px;
   z-index: 10;
+  top: 0;
+  position: absolute;
 }
 
 #header-logo {
   width: 20vw;
 }
 
-header>h1 {
-  font-size: 1.5em;
-  font-family: 'Russo One', 'Libre Barcode 128 Text', cursive;
-  color: #ffffff;
-  visibility: hidden;
-}
-
 header>.menu>.links>a.link {
   text-decoration: none;
   margin: 10px;
-  color: #185a9d;
   font-size: 1.5em;
 }
 
@@ -230,7 +140,7 @@ header>.menu>.links {
 }
 
 #hire-me-btn {
-  background: linear-gradient(135deg, #185a9d, #43cea2);
+  background-color: #0D7377;
   text-align: center;
   text-decoration: none;
   border-radius: 15px;
@@ -241,7 +151,7 @@ header>.menu>.links {
   font-size: 1.2em;
   font-family: 'kanit';
   animation-duration: 3s;
-  animation-name: slideinHireMe;
+  animation-name: fadeInHireMe;
   animation-iteration-count: 1;
   margin-bottom: 5vh;
   background-blend-mode: difference;
@@ -287,7 +197,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #185a9d;
+  color: #14FFEC;
   font-size: 1.2em;
   width: 100%;
 }
@@ -339,7 +249,7 @@ hr {
   animation-name: slideinMatt;
   animation-iteration-count: 3;
   margin-left: 1vw;
-  color: #185a9d;
+  color: #0D7377;
 }
 
 .landing-h1-box>#dizzle {
@@ -355,7 +265,7 @@ hr {
   animation-name: slideinDev;
   animation-iteration-count: 3;
   margin-left: 25%;
-  color: #185a9d;
+  color: #0D7377;
 }
 
 main {
@@ -383,7 +293,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100vw;
-  background-color: #185a9d;
+  background-color: #0D7377;
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -396,14 +306,12 @@ main {
   font-size: 1.4em;
   padding: 0;
   margin: 10px;
-  color: #dddbdd;
 }
 
 .nav>.icon:active {
   font-size: 1.4em;
   padding: 0;
   margin: 10px;
-  color: #fffec8;
 }
 
 .nav>a {
@@ -420,12 +328,12 @@ main {
   border-radius: 15px;
   margin: 10px;
   align-self: center;
-  color: #185a9d;
+  color: #0D7377;
   text-align: center;
 }
 
 #phone-link:hover {
-  color: #238bf3;
+  color: #14FFEC;
 }
 
 .social-icons>a {
@@ -444,10 +352,10 @@ main {
 }
 
 .site-footer {
-  background: linear-gradient(0deg, #185a9d, #43cea2, #43cea2);
+  background-color: #323232;
   padding: 45px 10px 20px;
   font-size: 15px;
-  color: #003c80;
+  color: #0D7377;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -457,25 +365,24 @@ main {
 }
 
 .site-footer>.icon {
-  color: #003c80;
+  color: #14FFEC;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .site-footer hr {
-  border-top-color: #003c80;
+  border-top-color: #14FFEC;
   opacity: 0.5
 }
 
-
 .site-footer h6 {
-  color: #003c80;
+  color: #14FFEC;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 2px
 }
 
 .site-footer a {
-  color: #0058bd;
+  color: #14FFEC;
 }
 
 .site-footer a:hover {
@@ -519,18 +426,18 @@ main {
   align-items: center;
   align-self: center;
   justify-content: center;
-  background: linear-gradient(135deg, #185a9d, #43cea2);
+  background-color: #323232;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  padding: 10px;
+  /* padding: 10px; */
   padding-bottom: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 0;
   margin-right: 0;
   border-radius: 10px;
-  color: white;
+  color: #14FFEC;
   font-size: 1em;
   text-align: center;
 }
@@ -556,17 +463,24 @@ main {
   .contact-form>button {
     width: 50%;
     min-height: 5vh;
-    background: linear-gradient(135deg, #185a9d, #43cea2);
+    background-color: #0D7377;
     border-radius: 15px;
     margin: 10px;
     align-self: center;
-    color: #ffffff;
+    color: #14FFEC;
     font-size: 2em;
   }
 
   .copyright-text {
     font-size: 1.2em;
     margin-bottom: 40px;
+  }
+
+
+  #header-logo {
+    width: 15vw;
+    margin-top: 10vh;
+    margin-left: 7vw;
   }
 
   #hire-me-btn {
@@ -580,13 +494,21 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #185a9d;
+    color: #14FFEC;
     font-size: 2em;
     width: 80%;
   }
 
   .landing-h1-box {
-    margin-left: 6%;
+    margin-top: 50vh;
+    width: 100%;
+    padding-left: 7vw;
+  }
+  
+  .landing-h1 {
+    font-size: 5em;
+    line-height: 0.10;
+    /* transition: margin-left 5s, color 2s, transform 2s; */
   }
 
   .landing-h1-box>#dev {
@@ -594,7 +516,6 @@ main {
     animation-name: slideinDevIpad;
     animation-iteration-count: 3;
     margin-left: 15%;
-    color: #185a9d;
   }
 
   main {
@@ -615,10 +536,9 @@ main {
   }
 
   .site-footer {
-    background: linear-gradient(0deg, #185a9d, #43cea2, #43cea2);
     padding: 80px 10px 20px;
     font-size: 15px;
-    color: #003c80;
+    color: #14FFEC;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -657,7 +577,7 @@ main {
     padding: 10px;
     margin-right: auto;
     margin-left: auto;
-    background: linear-gradient(135deg, #185a9d, #43cea2);
+    background-color: #0D7377;
     border-radius: 15px;
     width: 95%;
   }
@@ -677,15 +597,12 @@ main {
   }
 
   header {
-    /* margin: 0px;
-    margin-top: 20px; */
-    bottom: 85vh;
+    bottom: 80vh;
     position: fixed;
-    
   }
 
   #header-logo {
-    width: 10vw;
+    width: 8vw;
     margin-top: 2vh;
   }
 
@@ -695,20 +612,20 @@ main {
     flex-direction: row;
     justify-content: flex-end;
     align-self: baseline;
-    color: #dddbdd;
+    color: #14FFEC;
   }
 
   header>.menu>.links>a.link {
     text-decoration: none;
     margin: 10px;
     margin-right: 20px;
-    color: #185a9d;
+    color: #0D7377;
     font-size: 2em;
   }
 
   header>.menu>.links>a:hover {
     color: #93dffa;
-    text-shadow: -8px -2px 13px #93dffa;
+    text-shadow: -8px -2px 13px #14FFEC;
   }
 
    #hire-me-btn {
@@ -723,16 +640,15 @@ main {
   }
 
   .landing-h1-box {
-    margin-left: 10vw;
+    margin-left: 5vw;
     width: 90%;
   }
 
   .landing-h1 {
     font-size: 9em;
-    color: white;
     margin-top: 0;
     line-height: 4%;
-    color: #0000FF;
+    color: #14FFEC;
     transition: font-size 2s, color 2s, transform 2s;
   }
 
@@ -741,11 +657,10 @@ main {
     animation-name: slideinDevDesk;
     animation-iteration-count: 3;
     margin-left: 20%;
-    color: #185a9d;
   }
 
   .landing-h1:hover {
-    color: #ffffff;
+    color: #185b9d;
   }
 
   main {
@@ -765,7 +680,7 @@ main {
 
   .reverse {
     flex-direction: row-reverse;
-    background: linear-gradient(135deg, #dddbdd, #43cea2, #43cea2, #185b9d);
+    background-color: #323232;
 
   }
 
@@ -867,7 +782,7 @@ main {
   .icon::after,
   .icon:focus,
   .icon:hover {
-    color: #ffffff;
+    color: #14FFEC;
     text-shadow: -1px -2px 5px #93dffa;
   }
 
@@ -894,4 +809,95 @@ main {
     width: 100%;
   }
 
+}
+
+
+/* Animations Functions*/
+@keyframes slideinMatt {
+  from {
+    margin-left: 0%;
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  50% {
+    margin-left: 10%;
+  }
+
+  to {
+    margin-left: 1vw;
+    opacity: 1;
+    filter: blur(0px);
+
+  }
+}
+
+@keyframes slideinDizzle {
+  from {
+    color: #185a9d;
+    margin-left: 0%;
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  to {
+    margin-left: 5%;
+    opacity: 1;
+    filter: blur(0px);
+    color: white;
+  }
+}
+
+@keyframes slideinDev {
+  from {
+    margin-left: 0%;
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  to {
+    margin-left: 25%;
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes fadeInHireMe {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+@keyframes slideinIpad {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    margin-left: 0%;
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    margin-left: 15%;
+  }
+}
+
+@keyframes slideinDevDesk {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    margin-left: 0%;
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    margin-left: 20%;
+  }
 }

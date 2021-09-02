@@ -1,22 +1,21 @@
 import LoadingRing from "./Ring.png";
 import "./LoadingScreen.css";
-
+import logo from '../images/transparent-matt-dizzle-logo-green-and-blue.png'
 
 const LoadingScreen = () => {
   return (
     <div className='loading-box'>
-      <span className='animate__animated animate__flash animate__infinite animate__slow'>Loading</span>
       <img
         src={LoadingRing}
         alt="loading-ring"
-        className="ring  animate__animated animate__zoomIn "
+        className="ring"
       />
-{/* 
+
 <img
-        src={Logo}
+        src={logo}
         alt="matt-dizzle-dev-logo"
-        className="logo"
-      /> */}
+        className="logo animate__animated animate__rotateIn"
+      />
     </div>
   );
 };
