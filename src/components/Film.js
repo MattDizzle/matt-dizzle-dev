@@ -9,10 +9,13 @@ export default function Film() {
             // These properties are part of the Fetch Standard
             method: 'GET',
             mode: 'cors',
-            headers: { },            // Request headers. format is the identical to that accepted by the Headers constructor (see below)
+            headers: {
+                 
+             },            // Request headers. format is the identical to that accepted by the Headers constructor (see below)
             body: null,             // Request body. can be null, a string, a Buffer, a Blob, or a Node.js Readable stream
             redirect: 'follow',     // Set to `manual` to extract redirect headers, `error` to reject redirect
-            signal: null,           // Pass an instance of AbortSignal to optionally abort requests
+            signal: null,  
+                  
 
             // The following properties are node-fetch extensions
             follow: 5,
@@ -29,20 +32,16 @@ export default function Film() {
             .then(response => {
                 if (response.ok) {
                     return response.json();
-                } else {
-                    throw new Error('Exeedec quota')
-                }
+                } 
             })
             .then(response => setData(response))
-            .catch(error => setError(error));
+            .catch(error => setError(error.message));
     }, []);
 
     return (
         <div className='film'>
             <h2 style={{color: 'red'}}>{
-                error ?
-                    { error }
-                    : {error}
+                error
             }</h2>
 
             {
@@ -54,7 +53,7 @@ export default function Film() {
                             source={`https://www.youtube.com/embed/${item.id.videoId}`}
                             title={item.snippet.title} description={item.snippet.description}
                         />)
-                    : 'Loading...'
+                    : <h2 style={{color: 'blue'}}>'Loading...'</h2>
             }
         </div>
     )
