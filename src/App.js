@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -16,15 +16,12 @@ function App() {
   const [loading, setLoading] = useState(true);
   const toggleLoading = () => setLoading(false)
 
-  const timer = setTimeout(toggleLoading, 1500);
-  if (loading) {
-    setTimeout(toggleLoading, 1500);
-  }
-
-  if (!loading) {
-    clearTimeout(timer);
-  }
-
+   useEffect(() => {
+    const timer = setTimeout(toggleLoading, 1500);
+    if (!loading) {
+      clearTimeout(timer);
+    }
+}, [loading]);
   return (
     <>
       {loading === false ? (

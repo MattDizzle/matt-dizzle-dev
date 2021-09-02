@@ -54,7 +54,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'adfa',
             mediaUrl: three,
             metaData: {
                 type: 'image',
@@ -70,7 +70,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'adfs',
             mediaUrl: four,
             metaData: {
                 type: 'image',
@@ -86,7 +86,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'sdgggfg',
             mediaUrl: five,
             metaData: {
                 type: 'image',
@@ -102,7 +102,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'sdgfasdgewer',
             mediaUrl: six,
             metaData: {
                 type: 'image',
@@ -118,7 +118,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'adfgasdgewrwreghfdg',
             mediaUrl: seven,
             metaData: {
                 type: 'image',
@@ -134,7 +134,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'jklhkjuouo',
             mediaUrl: eight,
             metaData: {
                 type: 'image',
@@ -150,7 +150,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'gjklgpoi',
             mediaUrl: nine,
             metaData: {
                 type: 'image',
@@ -166,7 +166,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'fhjfgncg',
             mediaUrl: ten,
             metaData: {
                 type: 'image',
@@ -182,7 +182,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'trtthtes',
             mediaUrl: eleven,
             metaData: {
                 type: 'image',
@@ -198,7 +198,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'fghree',
             mediaUrl: twelve,
             metaData: {
                 type: 'image',
@@ -214,7 +214,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'rtyhufku',
             mediaUrl: thirteen,
             metaData: {
                 type: 'image',
@@ -230,7 +230,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'dfghklyu',
             mediaUrl: fourteen,
             metaData: {
                 type: 'image',
@@ -246,7 +246,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'dgfhertert',
             mediaUrl: fifteen,
             metaData: {
                 type: 'image',
@@ -262,7 +262,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'fghuklytuirtuy',
             mediaUrl: sixteen,
             metaData: {
                 type: 'image',
@@ -278,7 +278,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'ghjgertdrt',
             mediaUrl: seventeen,
             metaData: {
                 type: 'image',
@@ -294,7 +294,7 @@ export default function PhotoGallery() {
             }
         },
         { 
-            itemId: 'differentItem',
+            itemId: 'dgfhkltyuryh',
             mediaUrl: eighteen,
             metaData: {
                 type: 'image',

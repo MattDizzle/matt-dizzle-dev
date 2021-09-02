@@ -3,6 +3,7 @@ import VideoCard from './VideoCard'
 
 export default function Film() {
     const [data, setData] = useState();
+    const [error, setError] = useState();
     useEffect(() => {
         const options = {
             // These properties are part of the Fetch Standard
@@ -14,33 +15,46 @@ export default function Film() {
             signal: null,           // Pass an instance of AbortSignal to optionally abort requests
 
             // The following properties are node-fetch extensions
-            follow: 5,             
-            compress: true,         
-            size: 0,                
-            agent: null,            
-            highWaterMark: 16384,   
-            insecureHTTPParser: false	
+            follow: 5,
+            compress: true,
+            size: 0,
+            agent: null,
+            highWaterMark: 16384,
+            insecureHTTPParser: false
         }
 
         const url = `https://www.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_KEY}&channelId=UCOlyZUgsap7nTfX6XsnqUSw&part=id,snippet&order=date&maxResults=20\n`
 
         fetch(url, options)
-            .then(response => response.json())
-            .then(response => setData(response));
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                } else {
+                    throw new Error('Exeedec quota')
+                }
+            })
+            .then(response => setData(response))
+            .catch(error => setError(error));
     }, []);
 
     return (
         <div className='film'>
+            <h2 style={{color: 'red'}}>{
+                error ?
+                    { error }
+                    : {error}
+            }</h2>
+
             {
-            data != null ?
-             data.items.map((item, i) =>
-                <VideoCard 
-                style={{ color: 'blue' }} 
-                key={i} 
-                source={`https://www.youtube.com/embed/${item.id.videoId}`} 
-                title={item.snippet.title} description={item.snippet.description} 
-                />) 
-                : 'Loading...'
+                data != null ?
+                    data.items.map((item, i) =>
+                        <VideoCard
+                            style={{ color: 'blue' }}
+                            key={i}
+                            source={`https://www.youtube.com/embed/${item.id.videoId}`}
+                            title={item.snippet.title} description={item.snippet.description}
+                        />)
+                    : 'Loading...'
             }
         </div>
     )
