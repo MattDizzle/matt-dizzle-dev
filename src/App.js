@@ -38,7 +38,7 @@ function App() {
             <Link id='hire-me-btn' to='./contact'> Hire Me </Link>
           </div>
 
-          <main className='animate__animated animate__fadeInUp'>
+          <main className='main'>
             <ScrollToTop />
             <ScrollButton class='main-scroll animate__animated animate__fadeInDown' />
             <Switch>
