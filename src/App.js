@@ -11,6 +11,7 @@ import Graphics from './components/Graphics'
 import Film from './components/Film'
 import Contact from './components/Contact'
 import ScrollToTop from './helpers/ScrollToTop'
+import ScrollButton from './components/ScrollButton'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,8 +27,8 @@ function App() {
     <>
       {loading === false ? (
         <div className="App">
+          <Header />
           <div className='landing'>
-            <Header />
             <div className='landing-h1-box'>
               <h1 className='landing-h1' id='matt'>MATT</h1>
               <h1 className='landing-h1' id='dizzle'>DIZZLE</h1>
@@ -38,6 +39,7 @@ function App() {
 
           <main>
             <ScrollToTop />
+            <ScrollButton class='main-scroll' />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/code" component={Code} />

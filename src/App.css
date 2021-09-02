@@ -98,11 +98,10 @@
   height: 100vh;
   padding: 0;
   width: 100%;
-  background-color: #ffffff;
 }
 
 .card {
-  background: linear-gradient(135deg, #185b9d, #43cea2, #43cea2, #dddbdd);
+  background: linear-gradient(135deg, #185b9d, #43cea2, #43cea2, #dddbdd3a);
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -199,6 +198,7 @@ header {
   align-items: center;
   padding: 10px;
   margin-top: 10px;
+  z-index: 10;
 }
 
 #header-logo {
@@ -220,6 +220,11 @@ header>.menu>.links>a.link {
 }
 
 header>.menu>.links {
+  visibility: hidden;
+  display: none;
+}
+
+#hide {
   visibility: hidden;
   display: none;
 }
@@ -259,10 +264,8 @@ hr {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #43cea260;
   border-radius: 15px;
   margin-top: 10px;
-  border: 2px solid #93dffa
 }
 
 .icon-box>img {
@@ -356,8 +359,24 @@ hr {
 }
 
 main {
-  color: #ffffff;
   width: 100%;
+}
+
+.main-scroll {
+  bottom: 90vh;
+  right: 10vw;
+  width: 100vw;
+  position: fixed;
+  align-items: center;
+  border: solid 2px #000000 ;
+  border-radius: 50%;
+  font-size: 2em;
+  color: #000000;
+  right: 5;
+  top:10;
+  z-index: 10;
+  opacity: 0.6;
+  padding: 5px;
 }
 
 .nav {
@@ -394,7 +413,7 @@ main {
 
 #phone-link {
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1em;
   align-self: center;
   padding: 10px;
   margin: 5vh;
@@ -582,13 +601,17 @@ main {
     width: 100%;
   }
 
+  .main-scroll {
+    font-size: 4em;
+  }
+
   .nav>a {
     font-size: 2em;
   }
 
   #phone-link {
     width: 50%;
-
+    font-size: 1.5em;
   }
 
   .site-footer {
@@ -607,12 +630,6 @@ main {
 }
 
 @media (min-width:1400px) {
-  main {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-  }
-
   .card {
     flex-direction: row;
 
@@ -659,6 +676,19 @@ main {
     align-self: center;
   }
 
+  header {
+    /* margin: 0px;
+    margin-top: 20px; */
+    bottom: 85vh;
+    position: fixed;
+    
+  }
+
+  #header-logo {
+    width: 10vw;
+    margin-top: 2vh;
+  }
+
   header>.menu>.links {
     visibility: visible;
     display: flex;
@@ -668,10 +698,12 @@ main {
     color: #dddbdd;
   }
 
-  header>.menu>.links>.link {
-    margin-left: 10px;
-    margin-right: 10px;
-    align-self: baseline;
+  header>.menu>.links>a.link {
+    text-decoration: none;
+    margin: 10px;
+    margin-right: 20px;
+    color: #185a9d;
+    font-size: 2em;
   }
 
   header>.menu>.links>a:hover {
@@ -679,20 +711,7 @@ main {
     text-shadow: -8px -2px 13px #93dffa;
   }
 
-  header {
-    margin: 0px;
-    margin-top: 20px;
-  }
-
-  #header-logo {
-    width: 5vw;
-  }
-
-  header>h1 {
-    visibility: hidden;
-  }
-
-  #hire-me-btn {
+   #hire-me-btn {
     width: 25%;
     align-self: flex-start;
     margin-left: 15vw;
@@ -727,6 +746,17 @@ main {
 
   .landing-h1:hover {
     color: #ffffff;
+  }
+
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+
+  .main-scroll {
+    visibility: hidden;
+    display: none;
   }
 
   .nav {
@@ -806,6 +836,11 @@ main {
     text-decoration-line: none;
     margin: 0;
     padding: 0;
+  }
+
+  #phone-link {
+    font-size: 2em;
+    
   }
 
   .site-footer .copyright-text,
