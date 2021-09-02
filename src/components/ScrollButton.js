@@ -15,8 +15,6 @@ export default function ScrollButton(props) {
     };
 
     const [isVisible, setIsVisible] = useState(false);
-    const [height, setHeight] = useState(0)
-
     useEffect(() => {
         window.addEventListener("scroll", listenToScroll);
         return () =>
@@ -26,7 +24,6 @@ export default function ScrollButton(props) {
     const listenToScroll = () => {
         let heightToHideFrom = 200;
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        setHeight(winScroll);
 
         if (winScroll > heightToHideFrom) {
             setIsVisible(true);

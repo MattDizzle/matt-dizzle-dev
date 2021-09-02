@@ -72,6 +72,10 @@
   text-align: center;
 }
 
+.film > iframe {
+  margin: 10px;
+}
+
 .image-phone>img {
   width: 95%;
   align-self: center;
@@ -421,8 +425,9 @@ main {
   justify-content: space-around;
 }
 
-.video-card {
+/* .video-card {
   width: 95%;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -430,25 +435,20 @@ main {
   justify-content: center;
   background-color: #323232;
   display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  /* padding: 10px; */
+  padding: 5px;
   padding-bottom: 20px;
   margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 5px;
   border-radius: 10px;
   color: #14FFEC;
-  font-size: 1em;
+  font-size: 0.8em;
   text-align: center;
-}
+} */
 
-.video-card>iframe {
+/* .video-card>iframe {
   align-self: center;
-  min-height: 60%;
   width: 100%;
-}
+} */
 
 @media (min-height:700px) {
   #hire-me-btn {
@@ -478,6 +478,14 @@ main {
     margin-bottom: 40px;
   }
 
+  .film {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
   #header-logo {
     width: 15vw;
@@ -548,6 +556,28 @@ main {
     padding-bottom: 10vh;
     margin-bottom: 10vh;
     padding-top: 0%;
+  }
+
+  .video-card {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    background-color: #323232;
+    display: flex;
+    border-radius: 5px;
+    /* padding: 10px; */
+    padding-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 10px;
+    color: #14FFEC;
+    font-size: 1em;
+    text-align: center;
   }
 }
 
@@ -709,7 +739,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
   }
@@ -802,9 +832,9 @@ main {
 
   .video-card {
     width: 30%;
-    min-height: 35vh;
     padding-left: 0;
     padding-right: 0;
+    margin: 10px;
   }
 
   .video-card > iframe {
