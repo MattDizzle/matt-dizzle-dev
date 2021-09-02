@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barlow+Semi+Condensed:wght@100&family=Bebas+Neue&family=Bree+Serif&family=Dhurjati&family=Encode+Sans+SC:wght@600&family=Francois+One&family=Kanit:wght@300&family=Kaushan+Script&family=Lato:wght@900&family=Libre+Barcode+128+Text&family=Luckiest+Guy&family=Permanent+Marker&family=Russo+One&family=Secular+One&family=Sedgwick+Ave+Display&family=Staatliches&display=swap');
+
+.ring {
+  width: 75vw;
+  pointer-events: none;
+}
+
+.logo{
+  width: 75vw;
+  position: absolute;
+  animation: ring-spin;
+}
+
+.loading-component-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .ring {
+    animation: ring-spin infinite 20s linear;
+
+  }
+
+  .logo{
+    animation: logo-spin 1 2s linear;
+  }
+
+}
+
+@keyframes ring-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(45deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .ring {
+    width: 20vw;
+    pointer-events: none;
+  }
+  
+  .logo {
+    width: 20vw;
+    pointer-events: none;
+  }
+
+  .loading-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}

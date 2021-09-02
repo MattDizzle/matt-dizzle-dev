@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import VideoCard from './VideoCard'
+import LoadingComponents from '../LoadingScreen/LoadingComponents'
 
 export default function Film() {
     const [data, setData] = useState();
@@ -53,7 +54,7 @@ export default function Film() {
                             source={`https://www.youtube.com/embed/${item.id.videoId}`}
                             title={item.snippet.title} description={item.snippet.description}
                         />)
-                    : <h2 style={{color: 'blue'}}>'Loading...'</h2>
+                    : <LoadingComponents />
             }
         </div>
     )
