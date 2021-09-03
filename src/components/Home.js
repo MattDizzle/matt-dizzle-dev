@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import think from '../images/think.svg'
-import responsive from '../images/responsive.svg'
+import monitor from '../images/monitor.svg'
 
 const Home = () => {
 
@@ -31,7 +31,7 @@ const Home = () => {
                Prior to this Internship I graduated from the Engineering Immersion Program where I learned Full-Stack Web
                 Development using PostgreSQL, Express, React and Node.js through hands on learning, building multiple apps. "
                 id='about-me' />
-            <Card card='home-card' source={responsive} rev='reverse' title='SKILLS' paragraph='' iconz={skillsIcon} id='skills' />
+            <Card card='home-card' source={monitor} rev='reverse' title='SKILLS' paragraph='' iconz={skillsIcon} id='skills' />
         </section>
 
     )
