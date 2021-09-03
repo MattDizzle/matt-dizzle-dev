@@ -36,11 +36,10 @@
   flex-direction: column;
   border-radius: 5px;
   padding: 20px;
-  margin-top: 5px;
+  /* margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 0;
-  margin-right: 0;
-  margin: 1em auto;
+  margin-right: 0; */
   border-radius: 10px;
   color: #14FFEC;
 }
@@ -202,7 +201,7 @@ header>.menu>.links {
 }
 
 hr {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -605,10 +604,19 @@ main {
 }
 
 @media (min-width:1400px) {
-
+   .container {
+    display: flex;
+    flex-direction: column;
+  }
 
   .code-card {
    width: 45%;
+  }
+
+  .code-h2 {
+    font-size: 3em;
+    align-self: center;
+    text-align: center;
   }
 
   img.card-pic {
@@ -649,13 +657,35 @@ main {
     text-align: center;
   }
 
-  .image-phone {
-    width: 50%;
+  .film {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
   }
 
-  .image-phone>img {
-    width: 100%;
+  .footer-about-me-text {
+    width: 30vw;
     align-self: center;
+  }
+
+  .footer-links {
+    font-size: 1em;
+    list-style: none;
+    text-decoration: none;
+    text-decoration-line: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-about-me .quick-links .categories {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   #header-logo {
@@ -697,6 +727,8 @@ main {
 
   .home-card {
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
  
@@ -713,8 +745,15 @@ main {
     text-align: center;
   }
  
-  p.home-p {
-    font-size: 1.2em;
+  .icon::after,
+  .icon:focus,
+  .icon:hover {
+    color: #14FFEC;
+    text-shadow: -1px -2px 5px #93dffa;
+  }
+
+  div.icon-box {
+    background-color: #14ffeb75;
   }
 
   img.code-card-pic {
@@ -727,6 +766,15 @@ main {
     border-radius: 15px;
     align-self: center;
     padding: 50px;
+  }
+
+  .image-phone {
+    width: 50%;
+  }
+
+  .image-phone>img {
+    width: 100%;
+    align-self: center;
   }
 
   .landing {
@@ -772,40 +820,7 @@ main {
 
   .reverse {
     flex-direction: row-reverse;
-    background-color: #323232;
-  }
-
-  .card-text-box {
-    margin: 15px;
-  }
-
-  .card-text-box>p {
-    margin-top: 10px;
-    font-size: 1rem;
-  }
-
-  .card-text-box>h1 p {
-    margin-top: 10px;
-    font-size: 3rem;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .film {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
-  }
-
-  .site-footer {
-    padding-bottom: 40px;
-    padding-top: 0;
+    background-color: #212121;
   }
 
   .row {
@@ -815,14 +830,6 @@ main {
     align-items: stretch;
   }
 
-  .footer-about-me .quick-links .categories {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .quick-links ul .categories ul {
     width: 30%;
     margin-left: 0;
@@ -830,23 +837,22 @@ main {
     list-style: none;
   }
 
-  .footer-about-me-text {
-    width: 30vw;
-    align-self: center;
-  }
-
-  .footer-links {
-    font-size: 1em;
-    list-style: none;
-    text-decoration: none;
-    text-decoration-line: none;
-    margin: 0;
-    padding: 0;
-  }
 
   #phone-link {
     font-size: 2em;
-    
+  }
+
+  p.home-p {
+    font-size: 1.2em;
+  }
+
+  p.code-p {
+    font-size: 1.2em;
+  }
+
+  .site-footer {
+    padding-bottom: 40px;
+    padding-top: 0;
   }
 
   .site-footer .copyright-text,
@@ -870,12 +876,7 @@ main {
     font-size: 13px
   }
 
-  .icon::after,
-  .icon:focus,
-  .icon:hover {
-    color: #14FFEC;
-    text-shadow: -1px -2px 5px #93dffa;
-  }
+
 
   .social-icons.size-sm a {
     line-height: 34px;

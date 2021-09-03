@@ -9,7 +9,7 @@ const Home = () => {
         <img className='skills-logos' alt='photoshop logo' src="https://github.com/MattDizzle/favicon-host/blob/master/icons/express.png?raw=true" />
         <img className='skills-logos' alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/master/icons/postgresql.svg" />
         <img className='skills-logos' alt='react logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/master/icons/react.svg" />
-        <img className='skills-logos' alt='nodejs logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/master/icons/nodejs.svg" />
+        <img className='skills-logos' alt='nodejs logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/master/icons/node-js.svg" />
         <img className='skills-logos' alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/master/icons/mongodb.svg" />
         <img className='skills-logos' alt='heroku logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/ff109f163c42493f609a773a0be30156fb7ab674/icons/github%20(2).svg" />
         <img className='skills-logos' alt='heroku logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/master/icons/heroku.svg" />
