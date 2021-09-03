@@ -35,10 +35,10 @@ export default function Film() {
 
     return (
         <div className='film'>
-            <h2 style={{ color: 'red' }}>{ error }</h2>
+            {error && <h2 style={{ color: 'red' }}>{ error }</h2>}
 
             {
-                data != null ? data.items.map((item, i) => <iframe className='video-card' width="100%" height="315" src={`https://www.youtube.com/embed/${item.id.videoId}`} title={item.id.videoId + i} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>)
+                data != null ? data.items.map((item, i) => <iframe className={`video-card animate__animated animate__backInUp`} width="100%" height="315" src={`https://www.youtube.com/embed/${item.id.videoId}`} title={item.id.videoId + i} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>)
                 : <LoadingComponents />
             }
             

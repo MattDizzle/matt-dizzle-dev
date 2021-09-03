@@ -28,8 +28,8 @@ function App() {
     <>
       {loading === false ? (
         <div className="App">
-          <Header />
           <div className='landing'>
+          <Header />
             <div className='landing-h1-box'>
               <h1 className='landing-h1' id='matt'>MATT</h1>
               <h1 className='landing-h1' id='dizzle'>DIZZLE</h1>
