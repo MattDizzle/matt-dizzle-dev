@@ -19,7 +19,7 @@ function App() {
   const toggleLoading = () => setLoading(false)
 
    useEffect(() => {
-    const timer = setTimeout(toggleLoading, 3000);
+    const timer = setTimeout(toggleLoading, 2000);
     if (!loading) {
       clearTimeout(timer);
     }
