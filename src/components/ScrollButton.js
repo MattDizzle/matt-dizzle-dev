@@ -15,6 +15,7 @@ export default function ScrollButton(props) {
     };
 
     const [isVisible, setIsVisible] = useState(false);
+    
     useEffect(() => {
         window.addEventListener("scroll", listenToScroll);
         return () =>
