@@ -211,8 +211,8 @@ hr {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  border-radius: 15px;
   margin-top: 10px;
+  background-color: #0d74775b;
 }
 
 .icon-box>img {
@@ -403,6 +403,10 @@ main {
 
 #phone-link:hover {
   color: #14FFEC;
+}
+
+.reverse {
+  background-color: #212121;
 }
 
 .social-icons>a {
