@@ -11,7 +11,11 @@
   background-color: #212121;
 }
 
-.card {
+.categories {
+  margin-top: 20px;
+}
+
+.code-card {
   background-color: #323232;
   display: flex;
   flex-direction: column;
@@ -23,10 +27,25 @@
   margin-right: 0;
   margin: 1em auto;
   border-radius: 10px;
-  color: white;
+  color: #14FFEC;
 }
 
-.card>img {
+.home-card {
+  background-color: #323232;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  margin: 1em auto;
+  border-radius: 10px;
+  color: #14FFEC;
+}
+
+.code-card>img {
   width: 100%;
   align-self: center;
 }
@@ -81,26 +100,6 @@
   text-align: center;
 }
 
-.film > iframe {
-  margin: 10px;
-}
-
-.image-phone>img {
-  width: 95%;
-  align-self: center;
-  border-radius: 15px;
-}
-
-.label-input>input {
-  margin-top: 10px;
-  width: 90%;
-}
-
-.label-input>textarea {
-  margin-top: 10px;
-  width: 90%;
-}
-
 .contact-text-box {
   margin-top: 20px;
   width: 90%;
@@ -113,6 +112,21 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.film > iframe {
+  margin: 10px;
+}
+
+.footer-about-me {
+  margin-top: 20px;
+}
+
+.footer-links:active,
+.footer-links:focus,
+.footer-links:hover {
+  color: #3366cc;
+  text-decoration: none;
 }
 
 .graphics-box {
@@ -182,6 +196,11 @@ header>.menu>.links {
   color: #185a9d;
 }
 
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
 hr {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -204,14 +223,20 @@ hr {
 
 }
 
-img.card-pic {
+img.code-card-pic {
   width: 100%;
   border-radius: 15px;
   align-self: center;
 }
 
-img.card-pic:hover {
+img.code-card-pic:hover {
   box-shadow:5px 5px 15px 5px #14FFEC;
+}
+
+img.home-card-pic {
+  width: 100%;
+  border-radius: 15px;
+  align-self: center;
 }
 
 .image-phone {
@@ -219,6 +244,12 @@ img.card-pic:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.image-phone>img {
+  width: 95%;
+  align-self: center;
+  border-radius: 15px;
 }
 
 .label-input {
@@ -244,6 +275,16 @@ img.card-pic:hover {
   margin: 0;
 }
 
+.label-input>input {
+  margin-top: 10px;
+  width: 90%;
+}
+
+.label-input>textarea {
+  margin-top: 10px;
+  width: 90%;
+}
+
 .landing {
   filter: contrast(120%);
   background-image: url('https://github.com/MattDizzle/favicon-host/blob/master/matt-dizzle-dev/matt2.jpg?raw=true');
@@ -257,7 +298,7 @@ img.card-pic:hover {
   background-position: center;
   height: 100%;
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -420,26 +461,6 @@ main {
   text-shadow: -8px -2px 13px #93dffa;
 }
 
-.footer-about-me {
-  margin-top: 20px;
-}
-
-.quick-links {
-  margin-top: 20px;
-}
-
-.categories {
-  margin-top: 20px;
-}
-
-.footer-links:active,
-.footer-links:focus,
-.footer-links:hover {
-  color: #3366cc;
-  text-decoration: none;
-}
-
-
 .social-icons {
   font-size: 1.5em;
   display: flex;
@@ -448,30 +469,9 @@ main {
   justify-content: space-around;
 }
 
-/* .video-card {
-  width: 95%;
-  min-height: 30vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
-  background-color: #323232;
-  display: flex;
-  padding: 5px;
-  padding-bottom: 20px;
-  margin-top: 5px;
-  margin: 5px;
-  border-radius: 10px;
-  color: #14FFEC;
-  font-size: 0.8em;
-  text-align: center;
-} */
-
-/* .video-card>iframe {
-  align-self: center;
-  width: 100%;
-} */
+.quick-links {
+  margin-top: 20px;
+}
 
 @media (min-height:700px) {
   #hire-me-btn {
@@ -533,7 +533,7 @@ main {
   }
 
   .landing-h1-box {
-    margin-top: 50vh;
+    margin-top: 30vh;
     width: 100%;
     padding-left: 7vw;
   }
@@ -605,7 +605,9 @@ main {
 }
 
 @media (min-width:1400px) {
-  .card {
+
+
+  .code-card {
    width: 45%;
   }
 
@@ -693,9 +695,38 @@ main {
     text-align: center;
   }
 
-  img.card-pic {
+  .home-card {
+    flex-direction: row;
+    width: 100%;
+  }
+ 
+  .home-card-text-box {
+    width: 50%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-h2 {
+    font-size: 6em;
+    align-self: center;
+    text-align: center;
+  }
+ 
+  p.home-p {
+    font-size: 1.2em;
+  }
+
+  img.code-card-pic {
     width: 100%;
     border-radius: 15px;
+  }
+
+  img.home-card-pic {
+    width: 50%;
+    border-radius: 15px;
+    align-self: center;
+    padding: 50px;
   }
 
   .landing {
@@ -710,7 +741,6 @@ main {
 
   .landing-h1 {
     font-size: 9em;
-    margin-top: 0;
     line-height: 4%;
     color: #14FFEC;
     transition: font-size 2s, color 2s, transform 2s;
@@ -728,8 +758,6 @@ main {
   }
 
   main {
-    padding-left: 20px;
-    padding-right: 20px;
     width: 100%;
   }
 
@@ -743,6 +771,7 @@ main {
   }
 
   .reverse {
+    flex-direction: row-reverse;
     background-color: #323232;
   }
 

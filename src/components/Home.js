@@ -1,5 +1,7 @@
 import React from 'react'
 import Card from './Card'
+import think from '../images/think.svg'
+import responsive from '../images/responsive.svg'
 
 const Home = () => {
 
@@ -16,21 +18,20 @@ const Home = () => {
         <img className='skills-logos' alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129913.svg" />
         <img className='skills-logos' alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129894.svg" />
         <img className='skills-logos' alt='photoshop logo' src="https://raw.githubusercontent.com/MattDizzle/favicon-host/44b0a755b5023eabcc2d213523ace74b8c7edb39/adobe-creative-cloud/svg/adobe-129897.svg" />
-       
-
     </>
     return (
-        <section>
+        <section className='home-page'>
             <Card
-                source='https://source.unsplash.com/collection/10649550'
-                title='about me'
+                card='home-card'
+                source={think}
+                title='ABOUT ME'
                 paragraph="My name is Matthew and I live in Rialto, California. I'm an aspiring full stack web developer.
              I love music, basketball, learning and computers. I recently did an Internship at Eide Bailly where I learned
               a ton of stuff about Integrating Multiple systems using a combination of Boomi and SuiteScript 2.0.
                Prior to this Internship I graduated from the Engineering Immersion Program where I learned Full-Stack Web
                 Development using PostgreSQL, Express, React and Node.js through hands on learning, building multiple apps. "
                 id='about-me' />
-            <Card source='https://source.unsplash.com/collection/1773435' rev='reverse' title='skills' paragraph='' iconz={skillsIcon} id='skills' />
+            <Card card='home-card' source={responsive} rev='reverse' title='SKILLS' paragraph='' iconz={skillsIcon} id='skills' />
         </section>
 
     )
