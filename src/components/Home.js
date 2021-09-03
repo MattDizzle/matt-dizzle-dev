@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card'
-import think from '../images/think.svg'
+import business from '../images/business.svg'
 import monitor from '../images/monitor.svg'
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
         <section className='home-page'>
             <Card
                 card='home-card'
-                source={think}
+                source={business}
                 title='ABOUT ME'
                 paragraph="My name is Matthew and I live in Rialto, California. I'm an aspiring full stack web developer.
              I love music, basketball, learning and computers. I recently did an Internship at Eide Bailly where I learned
