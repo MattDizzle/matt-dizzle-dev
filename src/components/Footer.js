@@ -13,7 +13,7 @@ const Footer = () => {
 
           <div className="footer-about-me">
             <h6>About</h6>
-            <p className="footer-about-me-text">My name is Matthew and I live in Rialto, California. I'm an aspiring full stack web developer.
+            <p className="footer-about-me-text">My name is Matthew and I live in Southern California. I'm an aspiring full stack web developer.
               I love music, basketball, learning and computers. I recently did an Internship at Eide Bailly where I learned
               a ton of stuff about Integrating Multiple systems using a combination of Boomi and SuiteScript 2.0.
               Prior to this Internship I graduated from the Engineering Immersion Program where I learned Full-Stack Web
