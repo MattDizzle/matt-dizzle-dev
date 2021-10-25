@@ -15,6 +15,7 @@ export default function Contact() {
 
         <a target="_blank"
             className='amazon_link'
+            rel="noreferrer"
 href="https://www.amazon.com/b?_encoding=UTF8&tag=mattdizzledev-20&linkCode=ur2&linkId=fa4d459b812d1541e3bec0d35cc5210e&camp=1789&creative=9325&node=172282"
             
             >
