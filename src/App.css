@@ -11,6 +11,31 @@
   background-color: #212121;
 }
 
+.amazon_link {
+  text-decoration: none;
+  font-size: 1em;
+  align-self: center;
+  padding: 10px;
+  margin: 5vh;
+  border-radius: 15px;
+  margin: 10px;
+  align-self: center;
+  color: #0D7377;
+  text-align: center;
+  border: solid #0D7377 2px;
+}
+
+#link_icon {
+  margin-right: 2vw;
+}
+
+.amazon_link:hover {
+  color: #ffffff;
+  text-align: center;
+  border: solid #0D7377 2px;
+  background: #0D7377;
+}
+
 .categories {
   margin-top: 20px;
 }
@@ -185,12 +210,12 @@ header>.menu>.links {
 }
 
 #hire-me-btn {
-  background-color: #0D7377;
+  background-color: #323232;
   text-align: center;
   text-decoration: none;
   border-radius: 15px;
   border: 2px solid #185a9d;
-  color: rgba(255, 255, 255, 0.883);
+  color: #185b9d;
   width: 40%;
   margin-left: 5vw;
   font-size: 1.2em;
@@ -205,8 +230,8 @@ header>.menu>.links {
 }
 
 #hire-me-btn:hover {
-  background-color: #14FFEC;
-  color: #185a9d;
+  background-color: #185a9d;
+  color: white;
 }
 
 .home-page {
@@ -529,6 +554,13 @@ main {
 
 /* Ipad 768x1024 */
 @media (min-width:700px) {
+
+  .amazon_link {
+    width: 60%;
+    font-size: 2em;
+  }
+
+
   .contact-form>button {
     width: 50%;
     min-height: 5vh;

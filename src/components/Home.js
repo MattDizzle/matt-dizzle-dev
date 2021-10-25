@@ -26,7 +26,7 @@ const Home = () => {
                 source={business}
                 title='ABOUT ME'
                 paragraph="My name is Matthew and I live in Southern California. I'm an aspiring full stack web developer.
-             I love music, basketball, learning and computers. I recently did an Internship at Eide Bailly where I learned
+             I love music, basketball, learning, streaming and just computers in general. I recently did an Internship at Eide Bailly where I learned
               a ton of stuff about Integrating Multiple systems using a combination of Boomi and SuiteScript 2.0.
                Prior to this Internship I graduated from the Engineering Immersion Program where I learned Full-Stack Web
                 Development using PostgreSQL, Express, React and Node.js through hands on learning, building multiple apps. "

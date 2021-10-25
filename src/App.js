@@ -11,6 +11,7 @@ import Code from './components/Code'
 import Graphics from './components/Graphics'
 import Film from './components/Film'
 import Contact from './components/Contact'
+import DizzleTheDestroyer from './components/DizzleTheDestroyer'
 import ScrollToTop from './helpers/ScrollToTop'
 import ScrollButton from './components/ScrollButton'
 
@@ -35,7 +36,8 @@ function App() {
               <h1 className='landing-h1' id='dizzle'>DIZZLE</h1>
               <h1 className='landing-h1' id='dev'>DEV</h1>
             </div>
-            <Link id='hire-me-btn' to='./contact'> Hire Me </Link>
+            {/* <Link id='hire-me-btn' to='./contact'> Hire Me </Link> */}
+            <Link id='hire-me-btn' to='./mattdizzledev-amazon-associate'> Use My Amazon Link </Link>
           </div>
 
           <main className='main'>
@@ -45,6 +47,7 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route exact path="/code" component={Code} />
               <Route exact path="/contact" component={Contact} />
+              <Route exact path="/mattdizzledev-amazon-associate" component={DizzleTheDestroyer} />
               <Route exact path="/film" component={Film} />
               <Route exact path="/graphics" component={Graphics} />
             </Switch>
