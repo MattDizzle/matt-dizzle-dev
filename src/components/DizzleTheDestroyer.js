@@ -8,10 +8,12 @@ import twitch from '../images/www.twitch.tv_dizzlethedestroyer.png'
 library.add(fab)
 
 export default function Contact() {
+
+    let twitch_hosted = 'https://github.com/MattDizzle/favicon-host/blob/master/matt-dizzle-dev/www.twitch.tv_dizzlethedestroyer.png?raw=true'
     return (
         <section className='contact-form-page' id='contact'>
             <div className='image-phone'>
-                <img src={twitch} className='contact-pic' alt='matt dizzle dev' />
+                <img src={twitch_hosted} className='contact-pic' alt='matt dizzle dev' />
 
         <a target="_blank"
             className='amazon_link'
