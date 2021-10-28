@@ -8,8 +8,10 @@ library.add(fab)
 
 export default function Contact() {
 
+
+
     return (
-        <section className='contact-form-page' id='contact'>
+        <section className='contact-form-page' id='contact' style={{display: 'flex', justifyContent: 'center', alignItems:'center', flexDirection:'column', width: '60%'}}>
             <div className='image-phone'>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/rfEkuZgDhnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -24,6 +26,11 @@ href="https://www.amazon.com/b?_encoding=UTF8&tag=mattdizzledev-20&linkCode=ur2&
             </a>
 
             </div>
+
+            <section style={{display: 'flex', justifyContent: 'center', alignItems:'center', flexDirection:'column', background:'white', padding:'1%'}}>
+                <h1>Matt Dizzle's Wish List</h1>
+                <h3>Coming Soon</h3>
+            </section>
 
         </section>
     )
