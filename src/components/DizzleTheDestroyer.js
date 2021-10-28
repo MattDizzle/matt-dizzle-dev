@@ -8,11 +8,10 @@ library.add(fab)
 
 export default function Contact() {
 
-    let twitch_hosted = 'https://github.com/MattDizzle/favicon-host/blob/master/matt-dizzle-dev/www.twitch.tv_dizzlethedestroyer.png?raw=true'
     return (
         <section className='contact-form-page' id='contact'>
             <div className='image-phone'>
-                <img src={twitch_hosted} className='contact-pic' alt='matt dizzle dev' />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rfEkuZgDhnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <a target="_blank"
             className='amazon_link'
